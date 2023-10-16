@@ -82,3 +82,12 @@ p{
 .social i{
     color: #333333;
 }
+@media(max-width:500px){
+    .slide-text{
+        width: 100%;
+        
+    }
+    .slide h1{
+        padding: 1rem;
+    }
+}
