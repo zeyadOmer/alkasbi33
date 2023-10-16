@@ -6491,7 +6491,7 @@ blockquote.is-style-large.wp-block-quote > p {
   align-items: center;
 }
 .navbar-toggle {
-  --primarybtncolor: var(--color);
+  --primarybtncolor: #fff;
   --primarybtnhovercolor: var(--color);
   --primarybtnbg: var(--bgcolor, transparent);
   --primarybtnhoverbg: var(--bgcolor, transparent);
@@ -7602,8 +7602,7 @@ body.elementor-page .wrapper {
 }
 .builder-item {
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
+ 
 }
 .builder-item.hfg-end {
   margin-left: auto;
@@ -7613,6 +7612,14 @@ body.elementor-page .wrapper {
 }
 @media (min-width: 960px) {
   .builder-item {
+  }
+}
+@media (max-width:500px){
+  .gg{
+    padding-inline:20px;
+    background: #333333;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  
   }
 }
 .hfg-slot {
@@ -7894,7 +7901,7 @@ body.elementor-page .wrapper {
 }
 .builder-item--nav-icon,
 .header-menu-sidebar .close-sidebar-panel .navbar-toggle {
-  --bgcolor: #0035f7;
+  --bgcolor: #333333;
   --borderradius: 0;
   --borderwidth: 1px;
 }
