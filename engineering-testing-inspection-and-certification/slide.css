@@ -1,0 +1,43 @@
+body{
+    direction: rtl
+}
+p{
+    text-align: right;
+}
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    background: #000;
+}
+
+.slider {
+    direction: ltr;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 700px;
+    vertical-align: middle;
+}
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+}
+.slide h1{
+    color: #ed1f24;
+    padding: 1em;
+}
