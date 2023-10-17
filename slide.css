@@ -91,3 +91,13 @@ p{
         padding: 1rem;
     }
 }
+.gallary{
+    display: flex;
+   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gallary img{
+    max-height: 300px;
+    max-width: 300px;
+}
