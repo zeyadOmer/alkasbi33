@@ -7568,9 +7568,11 @@ body.elementor-page .wrapper {
   display: flex;
 }
 .gg{
-  padding-inline:20px;
   background: #333333;
+  box-shadow: 33px 0px 7px 0px rgba(0,0,0,0.2);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+ 
+
 
 
 }
@@ -7653,7 +7655,7 @@ body.elementor-page .wrapper {
   background-size: cover;
   background-attachment: var(--bgattachment);
 }
-.header-menu-sidebar-bg::before,
+/* .header-menu-sidebar-bg::before,
 [class*="row-inner"]::before {
   display: block;
   width: 100%;
@@ -7663,7 +7665,7 @@ body.elementor-page .wrapper {
   content: "";
   background-color: var(--overlaycolor);
   opacity: var(--bgoverlayopacity);
-}
+} */
 [class*="row-inner"]:not(.footer--row-inner) {
   border-bottom: var(--rowbwidth, 0) solid var(--rowbcolor);
 }
@@ -12242,6 +12244,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 .elementor-icon i:before,
 .elementor-icon svg:before {
   position: absolute;
+  color: #333333;
   left: 50%;
   transform: translateX(-50%);
 }

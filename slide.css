@@ -53,16 +53,19 @@ p{
     margin-bottom: 1em;
     padding: 1em;
 }
+.left{
+
+}
+.hfg-slot {
+
+}
 .social ul{
-    width: auto;
-    display: grid;
-    grid-template-columns: 50% 50%  ;
-    text-align: right;
-    gap: 15px;
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     color: #333333;
 }
-.social ul li a:hover{
+.social ul li :hover{
     color: #af2426;
     cursor: pointer;
 
@@ -77,10 +80,10 @@ p{
     cursor: pointer;
     font-size: 14px;
     text-decoration: underline;
-    color: #333333;
+    color: #333;
 }
 .social i{
-    color: #333333;
+    color: #333;
 }
 @media(max-width:500px){
     .slide-text{
