@@ -5807,8 +5807,7 @@ mark {
 }
 .container {
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
+
 }
 .w-100 {
   width: 100%;
@@ -5822,8 +5821,6 @@ mark {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
 }
 .col {
   padding: 0 15px;
@@ -6188,12 +6185,12 @@ blockquote.is-style-large.wp-block-quote > p {
   align-items: center;
 }
 .nav-ul {
-  
   display: flex;
 
   flex-wrap: wrap;
   
 }
+
 .nav-ul > li {
   margin: 0 calc(var(--spacing) / 2);
 }
@@ -6202,6 +6199,7 @@ blockquote.is-style-large.wp-block-quote > p {
   position: relative;
   width: 100%;
   display: flex;
+  font-size: large;
   align-items: center;
 }
 .nav-ul .caret {
@@ -6244,6 +6242,7 @@ blockquote.is-style-large.wp-block-quote > p {
   width: 100%;
 }
 .nav-ul .sub-menu li > .wrap {
+  background: #333333;
   padding: 10px 20px;
   white-space: nowrap;
   display: flex;
@@ -7568,8 +7567,10 @@ body.elementor-page .wrapper {
   display: flex;
 }
 .gg{
+  border: none;
+  
   background: #333333;
-  box-shadow: 33px 0px 7px 0px rgba(0,0,0,0.2);
+  padding-inline: 25px;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
  
 
@@ -7633,12 +7634,10 @@ body.elementor-page .wrapper {
 .hfg-slot.right {
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   margin: auto;
-  margin-left: 15%;
 }
-.hfg-slot.center {
-  justify-content: center;
-}
+
 .layout-fullwidth .container {
   max-width: 100% !important;
 }
