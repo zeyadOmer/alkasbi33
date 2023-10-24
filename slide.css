@@ -8,7 +8,7 @@ h1,h2,h3{
 font-family: 'Noto Naskh Arabic', serif;
 font-family: 'Noto Sans Arabic', sans-serif;    
 font-weight: 700;
-color: #af2426;
+color: #991a1a;
 }
 p{
     text-align: right;
@@ -17,6 +17,104 @@ p{
     overflow: hidden;
     position: relative;
     background: #000;
+}
+
+.aboutuscon{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.aboutuscon h1{
+  color: #991a1a;
+  text-decoration: underline;
+
+
+}
+.aboutuscon p{
+text-align: left;
+}
+
+
+.our-goals{
+  margin: 1rem;
+  margin-inline: auto;
+  width: 90%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
+  
+}
+.our-goals .card{
+       
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 100%;
+  flex-wrap: wrap;
+}
+li{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1rem;
+
+}
+li p{
+  text-align: left;
+  max-width: 50%;
+}
+
+.our-goals h3{
+  color: #991a1a;
+  text-decoration: underline;
+}
+.our-goals i{
+  padding: 1rem;
+}
+
+
+.msgcon{
+  
+  position: relative;
+  margin: 1rem;
+  margin-inline: auto;
+  display: flex;
+  width: 80%;
+  max-height: 500px;
+  padding: 1rem;
+  gap: 15px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 16px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+
+}
+.msgimg {
+  position: relative;
+  min-width: 45%;
+  overflow: hidden;
+}
+
+.msg h1{
+color: #991a1a;
+
+}
+.msg p{
+  min-width: 50%;
+  text-align: left;
+}
+.msg  img{
+  width: 170px;
+  
 }
 
 .slider {
@@ -87,6 +185,29 @@ margin-right: 0;
     .slide h1{
         padding: 1rem;
     }
+    
+  li p{
+    text-align: left;
+    max-width: 100%;
+  }
+
+.msgcon{
+  display: flex;
+  min-width: 95%;
+ margin: auto;
+ padding: 1rem; 
+flex-direction: column;
+max-height: initial;
+align-items: center;
+}
+.msg p{
+
+min-width: 100%;
+}
+.msgimg{
+  width: 100%;
+  
+}
 }
 .gallary{
     display: flex;
@@ -160,13 +281,6 @@ input:focus {
   box-shadow: none;
 }
 
-img:not([draggable]),
-embed,
-object,
-video {
-  max-width: 100%;
-  height: auto;
-}
 
 ul {
   list-style-type: disc;
@@ -217,10 +331,7 @@ button {
   transition: all ease 0.4s;
 }
 
-img {
-  border: none;
-  max-width: 100%;
-}
+
 
 ins {
   text-decoration: none;
@@ -1068,9 +1179,6 @@ ul.wp-block-rss a {
   }
 }
 
-.wcu-img-half img {
-  min-height: 646px;
-}
 
 /*=================================
     02. Reset
@@ -30264,4 +30372,4718 @@ textarea.form-control-lg {
     .d-print-none {
         display: none!important
     }
+}
+
+
+
+
+
+
+
+/* @import url('http://example.com/example_style.css'); */
+
+@font-face {
+  font-family: 'OpticianSans';
+  src: url('https://www.saltedstone.com/hubfs/Library/fonts/Optiker-K.eot'); /* IE9 Compat Modes */
+  src: url('https://www.saltedstone.com/hubfs/Library/fonts/Optiker-K.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('https://www.saltedstone.com/hubfs/Library/fonts/Optiker-K.woff') format('woff'), /* Modern Browsers */
+    url('https://www.saltedstone.com/hubfs/Library/fonts/Optiker-K.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('https://www.saltedstone.com/hubfs/Library/fonts/Optiker-K.woff2') format('woff2') /* Super Modern Browsers */;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/*|--------------------------------------------------------------------------------------------------------------|
+
+ $$$$$$\            $$\   $$\                     $$\        $$$$$$\    $$\                                   
+$$  __$$\           $$ |  $$ |                    $$ |      $$  __$$\   $$ |                                  
+$$ /  \__| $$$$$$\  $$ |$$$$$$\    $$$$$$\   $$$$$$$ |      $$ /  \__|$$$$$$\    $$$$$$\  $$$$$$$\   $$$$$$\  
+\$$$$$$\   \____$$\ $$ |\_$$  _|  $$  __$$\ $$  __$$ |      \$$$$$$\  \_$$  _|  $$  __$$\ $$  __$$\ $$  __$$\ 
+ \____$$\  $$$$$$$ |$$ |  $$ |    $$$$$$$$ |$$ /  $$ |       \____$$\   $$ |    $$ /  $$ |$$ |  $$ |$$$$$$$$ |
+$$\   $$ |$$  __$$ |$$ |  $$ |$$\ $$   ____|$$ |  $$ |      $$\   $$ |  $$ |$$\ $$ |  $$ |$$ |  $$ |$$   ____|
+\$$$$$$  |\$$$$$$$ |$$ |  \$$$$  |\$$$$$$$\ \$$$$$$$ |      \$$$$$$  |  \$$$$  |\$$$$$$  |$$ |  $$ |\$$$$$$$\ 
+ \______/  \_______|\__|   \____/  \_______| \_______|       \______/    \____/  \______/ \__|  \__| \_______|
+
+|--------------------------------------------------------------------------------------------------------------|*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+@media only screen and (max-width:767px) {
+  div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+    max-width:100%;
+  }
+  body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+    text-align:left!important;
+    float:none;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none;
+    margin-top:20px!important;
+    margin-bottom:0!important;
+  }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Table of Contents
+|--------------------------------------------------------------------------
+|
+| 1. Global Styles
+|   A. Site Constructs
+|   B. Colors
+|   C. Typography
+|   D. Forms
+|   E. Navigation
+|   F. Footer
+|
+| 2. Interior Pages
+|   A. Content Modules
+|   B. Home
+|   C. About
+|   D. Contact
+|   E. Blog
+|   F. Solutions Tier 1
+|   G. Solutions Tier 2
+|   H. Work Index
+|   I. Work Page
+|   J. Media Page
+|
+*/
+
+/*
+|--------------------------------------------------------------------------
+| 1A | Site Constructs
+|--------------------------------------------------------------------------
+*/
+
+.has-parallax .body-container-wrapper {
+    overflow:hidden;
+}
+
+.flush-columns {
+    font-size:0;
+}
+.flush-columns > div {
+    display:inline-block;
+}
+.flush-columns .col-2 {
+    width:calc(100% / 2);
+}
+.flush-columns .col-3 {
+    width:calc(100% / 3);
+}
+.flush-columns .col-4 {
+    width:calc(100% / 4);
+}
+.flush-columns .col-5 {
+    width:calc(100% / 5);
+}
+
+.columns span.hs_cos_wrapper_widget {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+    -webkit-column-gap:3%;
+    -moz-column-gap:3%;
+    column-gap:3%;
+    display:block;
+}
+.columns span.hs_cos_wrapper_widget > * {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-column-break-inside:avoid;
+    page-break-inside:avoid;
+    break-inside:avoid;
+}
+
+.centered-columns .row-fluid {
+    font-size:0;
+}
+.centered-columns > * .row-fluid [class*="span"] {
+    display:inline-block;
+    float:none;
+    vertical-align:middle;
+}
+
+.special-float-right {
+    float:right!important;
+    margin-left: 2.127659574%!important;
+    *margin-left: 2.0744680846382977%!important;
+}
+.special-float-left {
+    float:right!important;
+    margin-left:0!important;
+}
+@media only screen and (max-width:767px) {
+    .special-float-right, .special-float-left {
+        float:none!important;
+        margin:0!important;
+    }
+}
+
+body.city-footer {
+    background:url(//www.saltedstone.com/hubfs/2018/site-bg.jpg) center bottom no-repeat;
+    background-size:100% auto;
+}
+code:not([class*="language-"]), .code {
+  padding:4px;
+  background:#f8f8f8;
+  font-family:monospace;
+  border-radius:3px;
+  font-size:18px;
+}
+code:not([class*="language-"]) {
+  color:#e01e5a;
+}
+.code {
+  display:block;
+  padding:12px;
+  overflow-x:scroll;
+  font-size:14px;
+  line-height:1.3em;
+}
+pre, code {
+  border-radius:3px;
+}
+code[class*="language-"], pre[class*="language-"] {
+  font-size:14px;
+}
+
+.hs-image-widget {
+    max-width:100%;
+}
+.hs_cos_wrapper_type_widget_container {
+  	display:block;
+}
+
+.flipped {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.square {
+    box-sizing:content-box;
+}
+.square:after {
+    display:block;
+    padding-bottom:100%;
+    content:"";
+}
+.square .inner, [class*="aspect"] .inner {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.intrinsic-video, .hs-responsive-embed, .intrinsic-block {
+    position:relative;
+    padding-bottom:56.25%;
+}
+.intrinsic-video video, .hs-responsive-embed-iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+}
+.wistia_responsive_wrapper .hs-responsive-embed, .hs-responsive-embed  {
+  max-width:100%!important;
+  max-height:100%!important;
+}
+
+.block-shadow {
+    box-shadow:0px 2px 50px rgba(0,0,0,0.15);
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.slide-timer {
+    animation-name: slide-timer;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@keyframes slide-timer {
+    from { width:0%; }
+    to { width:100%; }
+}
+
+@media only screen and (max-width:767px) {
+    .section {
+        padding:60px 0;
+    }
+    .section2 {
+        padding:40px 0;
+    }
+    .section3 {
+        padding:20px 0 ;
+    }
+    .mobile-overflow-x {
+        overflow-x:hidden;
+    }
+    .page-center {
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
+
+.draggable-track {
+    
+}
+.draggable-slider-container .hs_cos_wrapper_widget_container {
+    display:block;
+    font-size:0;
+    max-height:600px;
+    overflow:hidden;
+}
+.draggable-slider-container .hs_cos_wrapper_widget {
+    display:inline-block;
+    vertical-align:middle;
+}
+.draggable-slider-container .hs_cos_wrapper_widget + .hs_cos_wrapper_widget {
+    padding-left:10px;
+}
+.draggable-slider-container.draggable-active .hs_cos_wrapper_widget_container {
+    max-height:initial;
+    overflow:initial;
+}
+
+@media only screen and (max-width:767px) {
+    .draggable-slider-container img {
+        max-height:200px;
+        width:auto!important;
+    }
+}
+
+.button {
+    border-width:2px;
+    border-style:solid;
+    box-sizing:border-box;
+    cursor:pointer;
+    padding:14px 23px 14px;
+    letter-spacing:0.095em;
+    text-align:center;
+    text-decoration:none;
+    font-size:21px;
+    font-weight:600;
+    position:relative;
+    text-transform:uppercase;
+    transition:0.2s;
+    overflow:hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+}
+.max-width-button .button, .button.max-width-button {
+    width:100%;
+}
+.button.smaller {
+    font-size:15px;
+    padding:8px 14px;
+}
+@media only screen and (max-width:767px) {
+    .button {
+        font-size:18px;
+        padding:10px 23px;
+    }
+    .button::before {
+        content:"";
+        display:block;
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        pointer-events:none;
+        background-image:radial-gradient(circle, #fff 10%, transparent 10.01%);
+        background-repeat:no-repeat;
+        background-position:50%;
+        -webkit-transform:scale(10, 10);
+        -ms-transform:scale(10, 10);
+        transform:scale(10, 10);
+        opacity:0;
+        transition:transform .5s, opacity 1s;
+    }
+    .button.bg-clear::before, .button.bg-white::before {
+      background-image:radial-gradient(circle, currentColor 10%, transparent 10.01%);
+    }
+    .button:active::before {
+        -webkit-transform:scale(0, 0);
+        -ms-transform:scale(0, 0);
+        transform:scale(0, 0);
+        opacity:0.3;
+        transition:0s;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 1B | Colors
+|--------------------------------------------------------------------------
+*/
+/* Text Colors */
+/* Basics */
+.c-white {
+    color:#FFF;
+}
+.c-black {
+    color:#000;
+}
+
+/* Primary Colors */
+.c-sand {
+    color:#d3ccbd;
+}
+.c-wet-stone {
+    color:#7f7f73;
+}
+.c-cool-water {
+    color:#007297;
+}
+.c-deep-midnight {
+    color:#151e28;
+}
+.c-deep-teal {
+    color:#154944;
+}
+.c-amber-ale {
+    color:#d68231;
+}
+.c-darkness {
+    color:#121920;
+}
+
+/* Shades */
+.c-ash {
+    color:#d9d3c6;
+}
+.c-light-ash {
+    color:#dedbd0;
+}
+.c-dark-bone {
+    color:#e4e3da;
+}
+.c-bone {
+    color:#ebebe5;
+}
+.c-bleached-bone {
+    color:#f5f5f2;
+}
+.c-dusk {
+    color:#263746;
+}
+.c-mist {
+    color:#d5d6d7;
+}
+.c-pislner {
+    color:#eca55d;
+}
+
+/* UI Colors */
+.c-bingo {
+    color:#00c18b;
+}
+.c-bad-blood {
+    color:#e24301;
+}
+
+/* Background Colors */
+/* Basics */
+.bg-white {
+    background-color:#FFF;
+    border-color:#FFF;
+}
+.bg-black {
+    background-color:#000;
+    border-color:#000;
+}
+.bg-clear {
+    background-color:transparent;
+}
+
+/* Primary Colors */
+.bg-sand {
+    background-color:#d3ccbd;
+    border-color:#d3ccbd;
+}
+.bg-wet-stone {
+    background-color:#7f7f73;
+    border-color:#7f7f73;
+}
+.bg-cool-water {
+    background-color:#007297;
+    border-color:#007297;
+}
+.bg-deep-midnight {
+    background-color:#151e28;
+    border-color:#151e28;
+}
+.bg-amber-ale {
+    background-color:#d68231;
+    border-color:#d68231;
+}
+.bg-darkness {
+    background-color:#121920;
+    border-color:#121920;
+}
+
+/* Shades */
+.bg-ash {
+    background-color:#d9d3c6;
+}
+.bg-light-ash {
+    background-color:#dedbd0;
+}
+.bg-dark-bone {
+    background-color:#e4e3da;
+}
+.bg-bone {
+    background-color:#ebebe5;
+}
+.bg-bleached-bone {
+    background-color:#f5f5f2;
+}
+.bg-dusk {
+    background-color:#263746;
+}
+.bg-mist {
+    background-color:#d5d6d7;
+}
+.bg-pislner {
+    background-color:#eca55d;
+}
+
+/* UI Colors */
+.bg-bingo {
+    background-color:#00c18b;
+    border-color:#00c18b;
+}
+.bg-bad-blood {
+    background-color:#e24301;
+    border-color:#e24301;
+}
+
+/* Border Colors */
+/* Basics */
+.b-white {
+    border-color:#FFF;
+}
+.b-black {
+    border-color:#000;
+}
+
+/* Primary Colors */
+.b-sand {
+    border-color:#d3ccbd;
+}
+.b-wet-stone {
+    border-color:#7f7f73;
+}
+.b-cool-water {
+    border-color:#007297;
+}
+.b-deep-midnight {
+    border-color:#151e28;
+}
+.b-deep-teal {
+    border-color:#154944;
+}
+.b-amber-ale {
+    border-color:#d68231;
+}
+.bg-darkness {
+    border-color:#121920;
+}
+
+/* Shades */
+.b-ash {
+    border-color:#d9d3c6;
+}
+.b-light-ash {
+    border-color:#dedbd0;
+}
+.b-dark-bone {
+    border-color:#e4e3da;
+}
+.b-bone {
+    border-color:#ebebe5;
+}
+.b-dusk {
+    border-color:#263746;
+}
+.b-mist {
+    border-color:#d5d6d7;
+}
+.b-pislner {
+    border-color:#eca55d;
+}
+
+/* UI Colors */
+.b-bingo {
+    border-color:#00c18b;
+}
+.b-bad-blood {
+    border-color:#e24301;
+}
+
+/* Hover State Colors */
+/* Text Colors */
+/* Basics */
+.h-c-white:hover {
+    color:#FFF;
+}
+.h-c-black:hover {
+    color:#000;
+}
+
+/* Primary Colors */
+.h-c-sand:hover {
+    color:#d3ccbd;
+}
+.h-c-wet-stone:hover {
+    color:#7f7f73;
+}
+.h-c-cool-water:hover {
+    color:#007297;
+}
+.h-c-deep-midnight:hover {
+    color:#151e28;
+}
+.h-c-deep-teal:hover {
+    color:#154944;
+}
+.h-c-amber-ale:hover {
+    color:#d68231;
+}
+.h-c-darkness:hover {
+    color:#121920;
+}
+
+/* Shades */
+.h-c-ash:hover {
+    color:#d9d3c6;
+}
+.h-c-light-ash:hover {
+    color:#dedbd0;
+}
+.h-c-dark-bone:hover {
+    color:#e4e3da;
+}
+.h-c-bone:hover {
+    color:#ebebe5;
+}
+.h-c-bleached-bone:hover {
+    color:#f5f5f2;
+}
+.h-c-dusk:hover {
+    color:#263746;
+}
+.h-c-mist:hover {
+    color:#d5d6d7;
+}
+.h-c-pislner:hover {
+    color:#eca55d;
+}
+
+/* UI Colors */
+.h-c-bingo:hover {
+    color:#00c18b;
+}
+.h-c-bad-blood:hover {
+    color:#e24301;
+}
+
+/* Background Colors */
+/* Basics */
+.h-bg-white:hover {
+    background-color:#FFF;
+}
+.h-bg-black:hover {
+    background-color:#000;
+}
+.h-bg-clear:hover {
+    background-color:transparent;
+}
+
+/* Primary Colors */
+.h-bg-sand:hover {
+    background-color:#d3ccbd;
+}
+.h-bg-wet-stone:hover {
+    background-color:#7f7f73;
+}
+.h-bg-cool-water:hover {
+    background-color:#007297;
+}
+.h-bg-deep-midnight:hover {
+    background-color:#151e28;
+}
+.h-bg-amber-ale:hover {
+    background-color:#d68231;
+}
+.h-bg-darkness:hover {
+    background-color:#121920;
+}
+
+/* Shades */
+.h-bg-ash:hover {
+    background-color:#d9d3c6;
+}
+.h-bg-light-ash:hover {
+    background-color:#dedbd0;
+}
+.h-bg-dark-bone:hover {
+    background-color:#e4e3da;
+}
+.h-bg-bone:hover {
+    background-color:#ebebe5;
+}
+.h-bg-bleached-bone {
+    background-color:#f5f5f2;
+}
+.h-bg-dusk:hover {
+    background-color:#263746;
+}
+.h-bg-mist:hover {
+    background-color:#d5d6d7;
+}
+.h-bg-pilsner:hover {
+    background-color:#eca55d;
+}
+
+/* UI Colors */
+.h-bg-bingo:hover {
+    background-color:#00c18b;
+    border-color:#00c18b;
+}
+.h-bg-bad-blood:hover {
+    background-color:#e24301;
+    border-color:#e24301;
+}
+
+/* Border Colors */
+/* Basics */
+.h-b-white:hover {
+    border-color:#FFF;
+}
+.h-b-black:hover {
+    border-color:#000;
+}
+
+/* Primary Colors */
+.h-b-sand:hover {
+    border-color:#d3ccbd;
+}
+.h-b-wet-stone:hover {
+    border-color:#7f7f73;
+}
+.h-b-cool-water:hover {
+    border-color:#007297;
+}
+.h-b-deep-midnight:hover {
+    border-color:#151e28;
+}
+.h-b-deep-teal:hover {
+    border-color:#154944;
+}
+.h-b-amber-ale:hover {
+    border-color:#d68231;
+}
+.h-b-darkness:hover {
+    border-color:#121920;
+}
+
+/* Shades */
+.h-b-ash:hover {
+    border-color:#d9d3c6;
+}
+.h-b-light-ash:hover {
+    border-color:#dedbd0;
+}
+.h-b-dark-bone:hover {
+    border-color:#e4e3da;
+}
+.h-b-bone:hover {
+    border-color:#ebebe5;
+}
+.h-b-dusk:hover {
+    border-color:#263746;
+}
+.h-b-mist:hover {
+    border-color:#d5d6d7;
+}
+.h-b-pilsner:hover {
+    border-color:#eca55d;
+}
+
+/* UI Colors */
+.h-b-bingo:hover {
+    border-color:#00c18b;
+}
+.h-b-bad-blood:hover {
+    border-color:#e24301;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 1C | Typography
+|--------------------------------------------------------------------------
+*/
+/*
+| The principal behind the way typography is managed on this site is to
+| allow as much definition to be dynamic as possible. This means minimizing
+| the use of absolute line heights and letter spacing - favoring ems - as 
+| well as using elements to determine spacing.
+|
+| Useful knowledge to write your own styles:
+|
+| letter-spacing    = [Letter Spacing in px] / [Font Size in px] (em)
+| letter-spacing    = [Adobe Tracking value] / 1000 (em)
+| line-height       = [Line Height in px] / [Font Size in px] (em)
+|
+| For purposes of site styles, font sizes may be expressed in pixels or
+| rems. Rems are assuming the base font size has been calculated to 10px
+| and can be interpreted by dividing your intended size by 10.
+| To put it plainly, 16px = 1.6rem.
+|
+*/
+
+/*
+|--------------------------------------------------------------------------
+| 1D | Forms
+|--------------------------------------------------------------------------
+*/
+
+h3.form-title {
+  font-family: "industry";
+  font-size: 30px;
+  padding-bottom:1em;
+  line-height:1.3em;
+  margin-top:-10px;
+}
+h3.form-title:empty {
+  display:none;
+}
+.hs-form > .hs-form-field + .hs-form-field, .hs-form-field + .hs-dependent-field, .hs-dependent-field > .hs-form-field + .hs-form-field {
+    margin-top:18px;
+}
+fieldset {
+    max-width:100%!important;
+}
+fieldset + fieldset {
+    margin-top:18px!important;
+}
+.form-columns-2 .hs-form-field {
+    width:48.717948718%!important;
+}
+.form-columns-2 .hs-form-field + .hs-form-field {
+    margin-left:2.564102564%!important;
+}
+.hs-form-field > label, .hs-dependent-field .hs-field-desc {
+    font-size:14px;
+    letter-spacing:0.115em;
+    text-transform:uppercase;
+    font-weight:600;
+    display:block;
+    padding-bottom:9px;
+}
+.hs-form-field > label .hs-form-required {
+    color:#F07B21;
+}
+.hs-input:not([type="checkbox"]), .hs-input:not([type="radio"]), #hs-pwd-widget-password {
+    font-size:18px;
+    color:#191E25;
+    font-family:"freight-sans-pro";
+    line-height:1.27em;
+    padding:8px 13px;
+    border-radius:0;
+    border:none;
+    border-bottom:4px solid transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    box-shadow: none !important;
+    transition:0.2s;
+    width:100%!important;
+    box-sizing:border-box;
+}
+.hs-input[type="checkbox"], .hs-input[type="radio"] {
+    display:inline-block;
+    width:auto!important;
+    margin-right:4px;
+}
+.hs-input[type="checkbox"] {
+    -webkit-appearance:checkbox;
+    -moz-appearance:checkbox;
+    appearance:checkbox;
+}
+.hs-input[type="radio"] {
+    -webkit-appearance:radio;
+    -moz-appearance:radio;
+    appearance:radio;
+}
+.hs-form-radio-display, .hs-form-checkbox-display {
+    font-size:14px;
+}
+.hs-form-radio + .hs-form-radio, .hs-form-checkbox + .hs-form-checkbox {
+    margin-top:8px;
+}
+select.hs-input {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCA2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDxnIGlkPSJjb250YWN0LWZvcm0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MjkuMDAwMDAwLCAtNjA1LjAwMDAwMCkiPg0KICAgICAgICA8ZyBpZD0iR3JvdXAtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUxLjAwMDAwMCwgMjMyLjAwMDAwMCkiIGZpbGw9IiMyNTI1MjUiPg0KICAgICAgICAgICAgPHBhdGggZD0iTTM3OC44MzIsMzgzLjYyOCBMMzczLjEyLDM4MC43NTggTDM3OC44MzIsMzc3Ljg2IEwzNzguODMyLDM4My42MjggWiBNMzgyLjkyMTU1NSwzNzcuODYgTDM4OC42MzM1NTUsMzgwLjczIEwzODIuOTIxNTU1LDM4My42MjggTDM4Mi45MjE1NTUsMzc3Ljg2IFoiIGlkPSImbHQ7Jmd0Oy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODAuODc2Nzc4LCAzODAuNzQ0MDAwKSByb3RhdGUoOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTM4MC44NzY3NzgsIC0zODAuNzQ0MDAwKSAiPjwvcGF0aD4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==) no-repeat calc(100% - 15px) calc(50% + 2px) #FFF;
+    box-shadow: none !important;
+}
+textarea.hs-input {
+    width:100%!important;
+    resize: none;
+}
+.hs-input:not([type="checkbox"]):valid, .hs-input:not([type="radio"]):valid, #hs-pwd-widget-password:valid {
+    /*border-bottom:4px solid #00C18B;*/
+}
+.hs-input.error, .hs-input.invalid {
+    border-bottom:4px solid #E24301;
+}
+.hs-error-msgs {
+    display:none!important;
+}
+.legal-consent-container {
+    margin-top:18px;
+}
+.legal-consent-container .hs-dependent-field {
+    margin-top:8px;
+}
+.hs_submit {
+    margin-top:40px;
+    text-align:center;
+}
+.hs-button {
+    cursor:pointer;
+    display:inline-block;
+    padding:14px 30px;
+    border:none;
+    font-family:"freight-sans-pro";
+    font-weight:600;
+    font-size:18px;
+    color:#FFF;
+    background:#007297;
+    letter-spacing:0.11em;
+    text-transform:uppercase;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius:4px;
+    transition:0.2s;
+}
+.hs-button:hover {
+    background:#eca55d;
+}
+
+.form-checkbox-3col .inputs-list.multi-container li {
+  width:calc(100% / 3);
+  padding-right:15px;
+  display:inline-block;
+}
+
+.form-dark {
+    padding:6% 9%;
+    border-radius:5px;
+    background:#263746;
+    box-shadow:0 2px 4px rgba(0,0,0,0.08);
+    color: #ffffff;
+}
+.form-dark .submitted-message {
+    font-size: 18px;
+}
+.form-dark .hs-form-field > label {
+    color:#FFF;
+}
+.form-dark select.hs-input {
+    color:#FFF;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCA2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDxnIGlkPSJjb250YWN0LWZvcm0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MjkuMDAwMDAwLCAtNjA1LjAwMDAwMCkiPg0KICAgICAgICA8ZyBpZD0iR3JvdXAtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUxLjAwMDAwMCwgMjMyLjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPg0KICAgICAgICAgICAgPHBhdGggZD0iTTM3OC44MzIsMzgzLjYyOCBMMzczLjEyLDM4MC43NTggTDM3OC44MzIsMzc3Ljg2IEwzNzguODMyLDM4My42MjggWiBNMzgyLjkyMTU1NSwzNzcuODYgTDM4OC42MzM1NTUsMzgwLjczIEwzODIuOTIxNTU1LDM4My42MjggTDM4Mi45MjE1NTUsMzc3Ljg2IFoiIGlkPSImbHQ7Jmd0Oy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODAuODc2Nzc4LCAzODAuNzQ0MDAwKSByb3RhdGUoOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTM4MC44NzY3NzgsIC0zODAuNzQ0MDAwKSAiPjwvcGF0aD4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==) no-repeat calc(100% - 15px) calc(50% + 2px);
+    box-shadow: none !important;
+}
+.form-dark .hs-input, .form-dark select.hs-input {
+    background-color:#1f2a35;
+    color:#FFF;
+}
+@supports (-ms-accelerator:true) {
+    .form-dark .hs-input, .form-dark select.hs-input {
+        color:#FFF;
+    }
+}
+.form-dark .hs-input:focus, .form-dark .hs-input:active, .form-dark .hs-input:valid, .form-dark .hs-input:not(:placeholder-shown):not(select), .form-dark .hs-input.error, .form-dark .hs-input.invalid {
+    background-color:#FFF;
+    color:#191E25;
+}
+.form-dark select.hs-input:valid, .form-dark select.hs-input:focus, .form-dark select.hs-input:active, .form-dark select.hs-input.error, .form-dark select.hs-input.invalid {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCA2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDxnIGlkPSJjb250YWN0LWZvcm0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MjkuMDAwMDAwLCAtNjA1LjAwMDAwMCkiPg0KICAgICAgICA8ZyBpZD0iR3JvdXAtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUxLjAwMDAwMCwgMjMyLjAwMDAwMCkiIGZpbGw9IiMyNTI1MjUiPg0KICAgICAgICAgICAgPHBhdGggZD0iTTM3OC44MzIsMzgzLjYyOCBMMzczLjEyLDM4MC43NTggTDM3OC44MzIsMzc3Ljg2IEwzNzguODMyLDM4My42MjggWiBNMzgyLjkyMTU1NSwzNzcuODYgTDM4OC42MzM1NTUsMzgwLjczIEwzODIuOTIxNTU1LDM4My42MjggTDM4Mi45MjE1NTUsMzc3Ljg2IFoiIGlkPSImbHQ7Jmd0Oy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODAuODc2Nzc4LCAzODAuNzQ0MDAwKSByb3RhdGUoOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTM4MC44NzY3NzgsIC0zODAuNzQ0MDAwKSAiPjwvcGF0aD4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==) no-repeat calc(100% - 15px) calc(50% + 2px) #FFF;
+}
+
+.form-light .hs-input:not([type="checkbox"]), .form-light .hs-input:not([type="radio"]), .form-light #hs-pwd-widget-password {
+  border-top:1px solid #CCCCCC;
+  border-left:1px solid #CCCCCC;
+  border-right:1px solid #CCCCCC;
+  border-bottom:1px solid #CCCCCC;
+}
+.form-light .hs-input.error, .form-light .hs-input.invalid {
+    border-bottom:4px solid #E24301;
+}
+
+.form-transparent-light .hs-form-field > label, .form-transparent-light .hs-form-field > label .hs-form-required, .form-transparent-light .hs-form-checkbox-display {
+    color:#FFF;
+}
+.form-transparent-light .hs-input, .form-transparent-light select.hs-input, .form-transparent-light .hs-input[value=""] {
+    background-color:transparent;
+    color:#FFF;
+    border-left:2px solid;
+    border-right:2px solid;
+    border-top:2px solid;
+    border-bottom:2px solid;
+    border-color:#FFF;
+}
+@supports (-ms-accelerator:true) {
+    .form-transparent-light .hs-input, .form-transparent-light select.hs-input {
+        color:#FFF;
+    }
+}
+.form-transparent-light select.hs-input {
+    color:#FFF;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCA2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDxnIGlkPSJjb250YWN0LWZvcm0iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05MjkuMDAwMDAwLCAtNjA1LjAwMDAwMCkiPg0KICAgICAgICA8ZyBpZD0iR3JvdXAtNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTUxLjAwMDAwMCwgMjMyLjAwMDAwMCkiIGZpbGw9IiNGRkZGRkYiPg0KICAgICAgICAgICAgPHBhdGggZD0iTTM3OC44MzIsMzgzLjYyOCBMMzczLjEyLDM4MC43NTggTDM3OC44MzIsMzc3Ljg2IEwzNzguODMyLDM4My42MjggWiBNMzgyLjkyMTU1NSwzNzcuODYgTDM4OC42MzM1NTUsMzgwLjczIEwzODIuOTIxNTU1LDM4My42MjggTDM4Mi45MjE1NTUsMzc3Ljg2IFoiIGlkPSImbHQ7Jmd0Oy1jb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODAuODc2Nzc4LCAzODAuNzQ0MDAwKSByb3RhdGUoOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTM4MC44NzY3NzgsIC0zODAuNzQ0MDAwKSAiPjwvcGF0aD4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg==) no-repeat calc(100% - 15px) calc(50% + 2px);
+    box-shadow: none !important;
+}
+.form-transparent-light .hs-input:focus, .form-transparent-light .hs-input:active, .form-transparent-light .hs-input:not(:placeholder-shown):not(select), .form-transparent-light .hs-input.error, .form-transparent-light .hs-input.invalid {
+    background-color:#FFF;
+    color:#191E25;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+}
+.form-transparent-light .hs-input.error, .form-transparent-light .hs-input.invalid {
+  border-bottom:4px solid #E24301 !important;
+}
+
+.single-line-form form {
+  display:flex;
+}
+.single-line-form form label {
+    display:none;
+}
+.single-line-form .hs-form-field, #hs-pwd-widget-password {
+    width:calc(100% - 50px);
+    display:inline-block;
+    border:2px solid #007297;
+    border-right:none;
+    vertical-align:top;
+}
+.single-line-form .hs-input, #hs-pwd-widget-password {
+    padding:0.55em 0.72em 0.55em;
+    max-height:46px;
+    margin-bottom:0;
+    margin-top:0;
+}
+.single-line-form .hs-submit, .hs_cos_wrapper_type_password_prompt .hs-button {
+    width:50px;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:0;
+}
+.single-line-form .hs-button {
+    border-radius:0;
+    background-image:url(https://www.saltedstone.com/hubfs/2018/blog/single-line-submit-chevron.svg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    text-indent: -100px;
+    width:50px;
+    height:50px;
+    padding:0;
+    cursor: pointer;
+}
+
+.single-line-form.text-button .hs-form-field {
+  border:none;
+}
+.single-line-form.text-button .hs-input {
+  padding:0.62em 0.72em 0.62em;
+  max-height:50px;
+}
+.single-line-form.text-button .hs-submit {
+  width:auto;
+  margin-left:18px;
+}
+.single-line-form.text-button .hs-button {
+  width:auto;
+  background-image:none;
+  font-size:18px;
+  text-indent:0;
+  line-height:1;
+  padding:0 15px;
+  border-radius:4px;
+}
+
+
+.widget-type-password_prompt {
+    margin-top:50px;
+}
+.widget-type-password_prompt form {
+    font-size:0;
+    max-width:380px;
+    display:block;
+    margin:0 auto;
+}
+#hs-pwd-widget-password {
+    width:calc(100% - 50px)!important;
+    margin-top:auto!important;
+    height:auto!important;
+    max-height:none;
+    padding:0.65em 0.72em 0.65em!important;
+}
+
+@media only screen and (max-width:767px) {
+    h3.form-title {
+        font-size:23px;
+    }
+    .form-columns-2 .hs-form-field {
+        width:100%!important;
+    }
+    .form-columns-2 .hs-form-field + .hs-form-field {
+        margin-top:18px;
+        margin-left:0!important;
+    }
+  
+    .form-checkbox-3col .inputs-list.multi-container li {
+      width:auto;
+      display:block;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 1E | Navigation
+|--------------------------------------------------------------------------
+*/
+.header-container-wrapper {
+    position:relative;
+    z-index:3;
+}
+
+.hs-menu-flow-horizontal {
+    font-size:0;
+}
+.hs-menu-flow-horizontal li {
+    display:inline-block;
+    vertical-align:top;
+}
+
+.hs-item-has-children {
+    position:relative;
+}
+
+
+#site-header {
+  
+  top:0px;
+  left:0;
+  width:100%;
+  transition:0.2s;
+}
+#site-header.header-shadow {
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+#site-header-inner.section {
+    padding:30px;
+}
+#site-header-inner .page-center {
+    max-width:1400px;
+}
+#site-header .row-fluid [class*="span"] {
+  min-height:0!important;
+}
+
+.mobile-logo {
+    display:none;
+}
+@media only screen and (max-width:767px) {
+    .mobile-logo {
+        display:block;
+    }
+    .desktop-logo {
+        display:none;
+    }
+    #site-header .logos {
+        float: none !important;
+        margin: 0 auto;
+    }
+}
+
+#site-header-inner .hs-menu-wrapper {
+    text-align:right;
+}
+#site-header-inner .hs-menu-wrapper li {
+    padding:18px 0;
+}
+#site-header-inner .hs-menu-wrapper li + li {
+    margin-left:40px;
+}
+#site-header-inner .hs-menu-wrapper .hs-menu-item > a {
+    font-weight:600;
+    font-size:18px;
+    color:inherit;
+    letter-spacing:0.11em;
+    text-transform:uppercase;
+    transition:0.2s;
+}
+#site-header-inner .hs-menu-wrapper .hs-menu-item > a:hover {
+    color:#D68230;
+}
+
+#site-header-inner .hs-item-has-children .hs-menu-item, #site-header-inner .hs-item-has-mega-menu .hs-mega-menu-item {
+    visibility:hidden;
+    opacity:0;
+    transition: 0.1s 0.1s; /* value 1: transition speed; value 2: delay of 0.1 seconds on hover off */
+}
+#site-header-inner .hs-item-has-children:hover .hs-menu-item, #site-header-inner .hs-item-has-mega-menu:hover .hs-mega-menu-item {
+    visibility:visible;
+    opacity:1;
+    transition-delay: 0s; /* don't delay on hover */
+}
+
+#site-header-inner .hs-item-has-mega-menu:hover {
+    background:#151e28;
+}
+#site-header-inner .hs-item-has-mega-menu:hover > a {
+    color:#FFF;
+}
+#site-header-inner .hs-item-has-mega-menu:hover::before {
+    display:block;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:50%;
+    left:50%;
+    background:#151e28;
+    z-index:-1;
+    padding:0 20px 20px 20px;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+.hs-item-has-mega-menu:hover::after {
+    content:"";
+    width:40px;
+    height:2px;
+    background:#D68230;
+    display:block;
+    position:absolute;
+    top:calc(100% + 10px);
+    left:50%;
+    margin-left:-20px;
+    z-index:1;
+}
+
+#site-header-inner .hs-mega-menu-item {
+    position:absolute;
+    top:100%;
+    right:50%;
+    -webkit-transform:translateX(50%);
+    -ms-transform:translateX(50%);
+    transform:translateX(50%);
+}
+
+#solutions-mega-menu {
+    padding:20px;
+    width:100vw;
+    max-width:940px;
+}
+#solutions-mega-menu .flush-columns > div {
+    padding:30px;
+    transition:0.2s;
+    text-align:left;
+    vertical-align:top;
+}
+#solutions-mega-menu .flush-columns > div + div {
+    border-left:2px solid rgba(255, 255, 255, 0.2);
+}
+#solutions-mega-menu .flush-columns > div:hover {
+    background:#D68231;
+}
+#solutions-mega-menu .flush-columns > div img {
+    transition:0.2s;
+}
+#solutions-mega-menu .flush-columns > div:hover img {
+    -webkit-filter: grayscale(1) contrast(10) invert(1);
+    -ms-filter: grayscale(1) contrast(10) invert(1);
+    filter: grayscale(1) contrast(10) invert(1);
+}
+#solutions-mega-menu .title4 {
+    margin-top:20px;
+    display:block;
+}
+.mega-menu-copy {
+    padding-top:20px;
+    font-size:17px;
+    line-height:1.4em;
+}
+
+#mobile-toggle, #mobile-phone {
+    display:none;
+}
+
+@media only screen and (max-width:767px) {
+    #site-header-inner {
+        background:#263746;
+    }
+    #site-header-inner.section {
+        padding:8px;
+    }
+    #site-header-inner .widget-type-linked_image img {
+        max-height:28px;
+    }
+    
+    #site-header-inner .hs-menu-wrapper {
+        display:none;
+        padding:35px;
+        background:#191E25;
+        position:absolute;
+        left:0;
+        top:45px;
+        width:100%;
+        z-index:1;
+        text-align:left;
+    }
+    #site-header-inner .hs-menu-flow-horizontal li {
+        display:block;
+        padding:0;
+    }
+    #site-header-inner .hs-menu-wrapper li + li {
+        margin-left:0;
+        margin-top:20px;
+    }
+    #site-header-inner .hs-menu-wrapper .hs-menu-item > a {
+        color:#FFF;
+        display:block;
+        padding:5px 0;
+    }
+    
+    #site-header-inner .hs-item-has-children .hs-menu-item, #site-header-inner .hs-item-has-mega-menu .hs-mega-menu-item {
+        visibility:visible;
+        opacity:1;
+    }
+    
+    #site-header-inner .hs-item-has-mega-menu:hover {
+        background:transparent;
+    }
+    #site-header-inner .hs-item-has-mega-menu:hover > a {
+        color:#FFF;
+    }
+    #site-header-inner .hs-item-has-mega-menu:hover::before {
+        display:none;
+    }
+    .hs-item-has-mega-menu:hover::after {
+        display:none;
+    }
+    
+    #site-header-inner .hs-mega-menu-item {
+        position:static;
+        top:100%;
+        right:50%;
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none;
+    }
+    
+    #solutions-mega-menu {
+        padding:0;
+        width:auto;
+        max-width:100%;
+    }
+    #solutions-mega-menu .flush-columns > div {
+        padding:0;
+        display:block;
+        width:auto;
+    }
+    #solutions-mega-menu .flush-columns > div + div {
+        border:none;
+    }
+    #solutions-mega-menu .flush-columns > div:hover {
+        background:transparent;
+    }
+    #solutions-mega-menu .flush-columns > div img {
+        display:none;
+    }
+    #solutions-mega-menu .mega-menu-title  {
+        font-size:18px;
+        font-weight:300;
+        opacity:0.7;
+    }
+    #solutions-mega-menu .mega-menu-title:before {
+        content:"–";
+        margin-right:6px;
+    }
+    .mega-menu-copy {
+        display:none;
+    }
+    #solutions-mega-menu .mega-menu-learnmore {
+        display:none;
+    }
+    
+    #mobile-toggle {
+        position:absolute;
+        top:14px;
+        left:14px;
+        width:20px;
+        height:15px;
+        cursor:pointer;
+        z-index:1;
+        display:block;
+    }
+    #mobile-toggle > div {
+        width:20px;
+        height:2px;
+        border-radius:1px;
+        position:absolute;
+        transition:0.2s;
+    }
+    .line1 {
+        top:0;
+    }
+    .line2 {
+        top:50%;
+        margin-top:-1px;
+    }
+    .line3 {
+        top:50%;
+        margin-top:-1px;
+    }
+    .line4 {
+        bottom:0;
+    }
+    .open .line1, .open .line4 {
+        opacity:0;
+    }
+    .open .line2 {
+        transform:rotate(45deg);
+    }
+    .open .line3 {
+        transform:rotate(-45deg);
+    }
+    
+    #mobile-phone {
+        display:block;
+        position:absolute;
+        top:11px;
+        right:14px;
+        z-index:1;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 1F | Footer
+|--------------------------------------------------------------------------
+*/
+
+
+#footer-cta {
+    padding-bottom:200px;
+    background:url(//www.saltedstone.com/hubfs/2018/action-bg.svg) center 140px no-repeat;
+}
+.footer-cta-copy {
+    padding:40px 0 60px;
+}
+.footer-cta-animation {
+    overflow:hidden;
+}
+.banner-icon {
+    position:relative;
+    top:40px;
+}
+.banner-icon img {
+    position:relative;
+    top:-50px;
+}
+@media only screen and (max-width:767px) {
+    #footer-cta {
+        padding-bottom:80px;
+        background:none;
+    }
+    .footer-cta-copy {
+        padding:25px 0 30px;
+    }
+    #footer-cta .footer-cta-copy strong {
+        display:block;
+        margin-top:10px;
+    }
+}
+
+#site-footer.section {
+    padding:40px 0;
+}
+@media only screen and (max-width:767px) {
+    #site-footer {
+        text-align:center;
+    }
+}
+
+#site-footer .footer-nav {
+    padding-top:18px;
+    font-family:"freight-sans-pro";
+}
+#site-footer .footer-nav > .hs-menu-wrapper {
+    display:inline-block;
+    vertical-align:middle;
+}
+#site-footer .footer-nav li + li {
+    margin-left:40px;
+}
+#site-footer .footer-nav a {
+    font-weight:600;
+    font-size:18px;
+    color:inherit;
+    letter-spacing:0.11em;
+    text-transform:uppercase;
+    transition:0.2s;
+}
+#site-footer .footer-nav a:hover {
+    color:#FFF;
+}
+@media only screen and (max-width:767px) {
+    #site-footer .footer-nav {
+        text-align:center;
+        padding:40px 0;
+    }
+    #site-footer .footer-nav li {
+        display:block;
+    }
+    #site-footer .footer-nav li + li {
+        margin-top:30px;
+        margin-left:0;
+    }
+}
+
+.footer-social {
+    padding-top:15px;
+    padding-left:35px;
+    padding-bottom:15px;
+    border-left:1px solid currentColor;
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:2.5%;
+}
+#site-footer .footer-social li + li {
+    margin-left:20px;
+}
+#site-footer .footer-social a {
+    color:currentColor;
+    font-size:25px;
+    text-transform:none;
+}
+#site-footer .footer-social a:hover {
+    color:#FFF;
+}
+@media only screen and (max-width:767px) {
+    .footer-social {
+        border:none;
+        text-align:center!important;
+        padding-top:60px;
+        padding-left:0;
+        display:block;
+        margin-left:0;
+    }
+    #site-footer .footer-social li {
+        display:inline-block;
+    }
+    #site-footer .footer-social li + li {
+        margin-top:0;
+        margin-left:30px;
+    }
+}
+
+.footer-copyright {
+    font-family:"freight-sans-pro";
+    text-align:right;
+    padding-top:50px;
+    padding-right:6.5%;
+    font-size:18px;
+}
+@media only screen and (max-width:767px) {
+    .footer-copyright {
+        padding-top:0;
+        padding-right:0;
+        text-align:center;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 2A | Content Modules
+|--------------------------------------------------------------------------
+*/
+
+.has-modals::before {
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.9);
+    z-index:9;
+    pointer-events:none;
+    opacity:0;
+    transition:0.3s;
+}
+.no-scroll::before {
+    opacity:1;
+    pointer-events:auto;
+}
+.circle-graphic-wrap {
+    position:relative;
+    padding-bottom:100%;
+    margin:0 auto;
+    overflow:hidden;
+    background:url(//www.saltedstone.com/hubfs/2018/home/map-brackets.svg) center 40% no-repeat;
+    background-size:82% auto;
+}
+.circle-graphic-wrap img {
+    max-width:100%;
+    height:auto;
+}
+.outer-ring, .bg-ring, .foreground {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    z-index:1;
+    width:100%;
+    height:100%;
+}
+.foreground {
+    z-index:2;
+}
+@media only screen and (max-width:767px) {
+    .circle-graphic-margin {
+        margin:0!important;
+    }
+}
+
+.layer1 {
+    z-index:-1;
+    -webkit-transform:translateZ(-1px) scale(2);
+    -ms-transform:translateZ(-1px) scale(2);
+    transform:translateZ(-1px) scale(2);
+}
+.layer2 {
+    z-index:-2;
+    -webkit-transform:translateZ(-2px) scale(3);
+    -ms-transform:translateZ(-2px) scale(3);
+    transform:translateZ(-2px) scale(3);
+}
+.layer3 {
+    z-index:-3;
+    -webkit-transform:translateZ(-3px) scale(4);
+    -ms-transform:translateZ(-3px) scale(4);
+    transform:translateZ(-3px) scale(4);
+}
+.layer4 {
+    z-index:-4;
+    -webkit-transform:translateZ(-4px) scale(5);
+    -ms-transform:translateZ(-4px) scale(5);
+    transform:translateZ(-4px) scale(5);
+}
+.page-center.parallax {
+    perspective:1px;
+    transform-style:preserve-3d;
+    pointer-events:none;
+}
+.zero-height {
+    height:0;
+    position:relative;
+}
+.zero-height img {
+    position:absolute;
+    top:0;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+.parallax-align-left img {
+    left:0;
+}
+.parallax-align-far-left {
+    max-width:100%;
+    padding:0;
+}
+.parallax-align-far-left img {
+    left:0;
+}
+.parallax-align-right img {
+    right:0;
+}
+.parallax-align-far-right {
+    max-width:100%;
+    padding:0;
+}
+.parallax-align-far-right img {
+    right:0;
+}
+
+/* Scroll Reveal */
+[class*="stagger"], [class*="scalein"], [class*="scaleup"] {
+    visibility:hidden;
+}
+
+/* Related Article Item */
+.solutions-related-articles > span {
+    display:block;
+    font-size:0;
+}
+.solutions-related-articles .hs_cos_wrapper_widget {
+    width:calc(100% / 4);
+    display:inline-block;
+    vertical-align:top;
+}
+.related-article-wrap {
+    background-image:url(//www.saltedstone.com/hubfs/2018/solutions/related-bg.svg);
+    background-size:cover;
+    background-position:center center;
+    transition:0.2s 0s;
+    padding:20px;
+    height:100%;
+}
+.related-article-wrap:hover {
+    background-color:rgba(214,130,48,0.5);
+}
+.related-article {
+    border-width:2px;
+    border-style:solid;
+    position:relative;
+    transition:0.2s 0s;
+    padding:30px;
+    height:100%;
+}
+.related-article-wrap:hover .related-article {
+    background:#D68231;
+    border-color:#D68231;
+}
+.related-article .title-underline:after {
+    background-color:#d5d6d7;
+}
+.related-article .title-underline {
+    transition:0.2s;
+}
+.related-article:hover .title-underline {
+    color:#FFF;
+}
+.related-article-info {
+    position:absolute;
+    top:65px;
+    left:50%;
+    width:100%;
+    height:calc(100% - 65px);
+    padding:30px;
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-content:center;
+    transition:0.2s 0s;
+}
+.related-article-blurb {
+    opacity:0;
+    padding:0 10px;
+    transition:0.2s 0;
+}
+.related-article-wrap:hover .related-article-info {
+    opacity:0;
+}
+.related-article-wrap:hover .related-article-blurb {
+    opacity:1;
+    position:relative;
+    z-index:1;
+}
+.related-content-title {
+    align-self:flex-start;
+    padding-bottom:40px;
+}
+.related-content-meta {
+    flex-shrink: 0;
+}
+.related-article .blog-author-photo {
+    display: block;
+    margin: 0 auto;
+}
+.related-article .blog-author-description {
+    display: block;
+    margin: 0 auto;
+}
+.related-article .blog-author-post-info {
+    margin-top:0;
+    font-style:italic;
+}
+.related-article-blurb a {
+    display:block;
+    padding:30px 0;
+}
+.ta-left .solutions-related-articles .slick-dots {
+    margin-left:20px;
+}
+@media only screen and (max-width:1024px) {
+    .solutions-related-articles .hs_cos_wrapper_widget {
+        width:calc(100% / 3);
+    }
+}
+@media only screen and (max-width:768px) {
+    .solutions-related-articles .hs_cos_wrapper_widget {
+        width:calc(100% / 2);
+    }
+}
+@media only screen and (max-width:767px) {
+    .solutions-related-articles .hs_cos_wrapper_widget {
+        width:auto;
+    }
+}
+
+/* Slick Dots Styles */
+/* Simple Core */
+.dots-simple .slick-dots {
+    margin-top:30px;
+    font-size:0;
+}
+.dots-simple .slick-dots li {
+    display:inline-block;
+}
+.dots-simple .slick-dots li + li {
+    margin-left:10px;
+}
+.dots-simple .slick-dots button {
+    display:block;
+    padding:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    width:12px;
+    height:12px;
+    border:none;
+    border-radius:50%;
+    opacity:0.3;
+    transition:0.2s;
+    cursor:pointer;
+}
+.dots-simple .slick-dots li:hover:not(.slick-active) button {
+    opacity:0.7;
+}
+.dots-simple .slick-dots .slick-active button {
+    opacity:1;
+}
+/* Simple - Grey */
+.dots-simple.dots-grey button {
+    background:#7F7F73;
+}
+/* Simple - Bingo */
+.dots-simple.dots-bingo button {
+    background:#00c18b;
+}
+/* Simple - Amber Ale */
+.dots-simple.dots-amber-ale button {
+    background:#D68230;
+}
+/* Simple - Deep Midnight */
+.dots-simple.dots-deep-midnight button {
+    background:#151e28;
+}
+
+/* Outline Core */
+.dots-outline .slick-dots {
+    margin-top:30px;
+    font-size:0;
+}
+.dots-outline .slick-dots li {
+    display:inline-block;
+}
+.dots-outline .slick-dots li + li {
+    margin-left:8px;
+}
+.dots-outline .slick-dots li button {
+    background:none;
+    transition:0.2s;
+    border:2px solid currentColor;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    padding:0;
+    font-size:0;
+}
+/* Outline - Amber Ale */
+.dots-outline.dots-amber-ale .slick-dots li button {
+    border:2px solid #D68230;
+}
+.dots-outline.dots-amber-ale .slick-dots li.slick-active button {
+    background:#D68230;
+}
+
+/* Bio Popup */
+.bio-popup {
+  	box-shadow:0 0 30px rgba(0,0,0,0.2);
+  	box-sizing:border-box;
+  	padding:6% 4% 3% 4%;
+  	max-width:720px;
+  	font-size:0;
+  	width:100%;
+  	position:fixed;
+  	top:50%;
+  	left:50%;
+  	-webkit-transform:translate(-50%, -50%);
+  	-ms-transform:translate(-50%, -50%);
+  	transform:translate(-50%, -50%);
+  	display:none;
+  	z-index:10;
+}
+.bio-close {
+  	position:absolute;
+  	top:0;
+  	left:0;
+    z-index:1;
+  	cursor:pointer;
+}
+
+.bio-image {
+  	float:right;
+  	width:200px;
+  	margin-top:-135px;
+		margin-right:-20px;
+}
+.bio-header {
+}
+.bio-body {
+  	padding-top:34px;
+}
+.bio-social {
+  	font-size:0;
+  	padding-top:34px;
+}
+.bio-social li {
+  	display:inline-block;
+}
+.bio-social li + li {
+  	margin-left:14px;
+}
+
+@media only screen and (max-width:767px) {
+    .bio-popup {
+        padding:14% 6% 6% 6%;
+        max-width:92vw;
+    }
+    .bio-image {
+        width:110px;
+        margin-top:-20px;
+        margin-right:0;
+    }
+    .bio-body {
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+    .bio-body.intro .hs_cos_wrapper_type_inline_rich_text {
+        font-size:16px;
+    }
+    .bio-popup .button {
+        vertical-align:middle;
+    }
+    .bio-social {
+        display:inline-block;
+        padding-top:0;
+        vertical-align:middle;
+        margin-left:20px;
+    }
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| 2B | Home Page
+|--------------------------------------------------------------------------
+*/
+
+#home-banner-intro {
+    padding-top:125px;
+    position:relative;
+    z-index:1;
+}
+#home-video-wrap {
+    left:-5%;
+    margin-bottom:-20%;
+}
+@media only screen and (max-width:767px) {
+    #home-banner-intro {
+        padding-top:0;
+        text-align:center;
+    }
+    #home-banner-intro .title4 {
+        width:75%;
+        margin:0 auto;
+    }
+    #home-video-wrap {
+        left:-45px;
+        margin-bottom:0;
+    }
+    #home-banner-intro a.cta_button {
+        width:100%;
+        box-sizing:border-box!important;
+    }
+}
+
+.solutions-blurbs {
+    padding-bottom:50%;
+}
+.solutions-blurbs .hs_cos_wrapper_widget {
+    width:calc(100%/3);
+    display:inline-block;
+    vertical-align:top;
+}
+.solutions-blurbs .hs_cos_wrapper_type_widget_container {
+    display:block;
+    position:relative;
+    font-size:0;
+}
+.solution-icon {
+    cursor:pointer;
+    transition:0.2s;
+}
+.solution-icon:hover {
+    -webkit-filter: grayscale(1) contrast(10) invert(1);
+    -ms-filter: grayscale(1) contrast(10) invert(1);
+    filter: grayscale(1) contrast(10) invert(1);
+}
+.solution-body {
+    position:absolute;
+    width:100%;
+    top:calc(100% + 32px);
+    left:0;
+    display:none;
+}
+.active .solution-body {
+    display:block;
+}
+.solution-body .button {
+    padding-left:0;
+}
+@media only screen and (max-width:767px) {
+    .home-solutions-nav-title {
+        position:relative;
+        text-align:center;
+        margin-bottom:30px;
+    }
+    .home-solutions-nav-title::after {
+        margin:0;
+        background:url(//www.saltedstone.com/hubfs/solutions-mobile-bg.png) center center no-repeat;
+        background-size:100% auto;
+        width:268px;
+        height:34px;
+        position:absolute;
+        top:0;
+        left:50%;
+        -webkit-transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%);
+    }
+    .solutions-blurbs {
+        text-align:center;
+    }
+    .solution-body .button {
+        padding-right:0;
+    }
+}
+
+.home-quote-image {
+    padding:0 15px;
+}
+@media only screen and (max-width:767px) {
+    .home-quote-image {
+        padding:0 15px 0 0;
+    }
+    .quote-content .body-large .hs_cos_wrapper_type_rich_text {
+        font-size:18px;
+    }
+}
+
+#home-awards .hs_cos_wrapper_widget_container {
+    font-size:0;
+}
+#home-awards .hs_cos_wrapper_widget {
+    display:inline-block;
+    vertical-align:middle;
+    padding:10px 35px;
+}
+#home-awards .slick-slide {
+  	float:none;
+  	display:inline-block;
+    vertical-align:middle;
+}
+@media only screen and (max-width:767px) {
+    #home-awards {
+        position:relative;
+        padding:120px 0 80px;
+    }
+    #home-awards::before {
+        content:"";
+        display:block;
+        position:absolute;
+        width:298px;
+        height:49px;
+        background:url(//www.saltedstone.com/hubfs/2018/home/awards-before.png) center center no-repeat;
+        background-size:100% auto;
+        top:43px;
+        left:50%;
+        -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+        transform:translateX(-50%);
+    }
+    #home-awards::after {
+        content:"";
+        display:block;
+        position:absolute;
+        width:298px;
+        height:49px;
+        background:url(//www.saltedstone.com/hubfs/2018/home/awards-after.png) center center no-repeat;
+        background-size:100% auto;
+        top:calc(100% - 43px);
+        left:50%;
+        -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+        transform:translateX(-50%);
+    }
+    #home-awards .hs_cos_wrapper_widget {
+        width:calc(100% / 2);
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2C | About Page
+|--------------------------------------------------------------------------
+*/
+
+.photo-slider img {
+    cursor:grab;
+}
+.photo-slider .draggable-slider-container .hs_cos_wrapper_widget + .hs_cos_wrapper_widget {
+    padding-left:6px;
+}
+@media only screen and (max-width:767px) {
+    .photo-slider img {
+        max-height:210px;
+        width:auto;
+    }
+}
+
+.planet-copy .hs_cos_wrapper_type_rich_text {
+    font-size:30px;
+}
+@media only screen and (max-width:767px) {
+    .planet-copy .hs_cos_wrapper_type_rich_text {
+        display:block;
+        padding-top:30px;
+        text-align:center;
+        font-size:24px;
+    }
+}
+
+.approach-image {
+    position:relative;
+}
+.approach-image img {
+    display:block;
+    max-width:100%;
+    height:auto;
+    position:relative;
+    z-index:0;
+}
+.approach-image::before {
+    position:absolute;
+    top:5%;
+    left:5%;
+    right:-5%;
+    bottom:-5%;
+    width:100%;
+    height:100%;
+    content:"";
+    display:block;
+    background:url(https://www.saltedstone.com/hubfs/2018/about/squareTopoBG.svg) center center no-repeat;
+    opacity:0.5;
+    background-size:100% auto;
+    z-index:-1;
+}
+@media only screen and (max-width:767px) {
+    .approach-images {
+        margin-bottom:50px;
+    }
+    .approach-image::before {
+        left:-5%;
+        width:110%;
+    }
+}
+
+/* Culture Code */
+.culture-code {
+    background:url(https://www.saltedstone.com/hubfs/2018/about/slide-default.jpg) center center no-repeat;
+    background-size:cover;
+    margin-bottom:100px;
+}
+.culture-slide {
+    padding-top:310px;
+    /*padding-bottom:310px;*/
+    padding-bottom:260px;
+    background-size:cover!important;
+    background:none!important;
+}
+.culture-slide .page-center {
+    position:relative;
+    padding-bottom:125px;
+}
+.culture-slide h2 {
+    padding-bottom:40px;
+    position:relative;
+    z-index:1;
+}
+.culture-slide h3 {
+    position:relative;
+    z-index:1;
+}
+.the-number {
+    font-size:600px;
+    font-family:"industry-inc-in-n-out";
+    line-height:1;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    z-index:0;
+}
+.culture-code .slick-dots {
+    width:100%;
+    text-align:center;
+    position:absolute;
+    bottom:300px;
+}
+.culture-code .slick-dots li {
+    display:inline-block;
+}
+.culture-code .slick-dots li + li {
+    margin-left:8px;
+}
+.culture-code .slick-dots li button {
+    background:none;
+    transition:0.2s;
+    border:2px solid #D68230;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    padding:0;
+    font-size:0;
+}
+.culture-code .slick-dots li.slick-active button {
+    background:#D68230;
+}
+@media only screen and (max-width:1440) {
+    
+}
+@media only screen and (max-width:767px) {
+    .culture-code {
+        margin-bottom:50px;
+    }
+    .culture-slide .page-center {
+        padding-bottom:0;
+    }
+    .culture-slide {
+        padding-top:125px;
+        padding-bottom:200px;
+        background-size:cover!important;
+    }
+    .the-number {
+        font-size:300px;
+        -webkit-transform:translate(-50%, -30%);
+        -ms-transform:translate(-50%, -30%);
+        transform:translate(-50%, -30%);
+    }
+    .culture-code .slick-dots {
+        bottom:145px;
+    }
+}
+
+/* Culture Slider Support */
+#culture-slider-support .page-center {
+    position:relative;
+}
+#culture-slider-support .page-center > .widget-span {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/* Reflection of Culture */
+.culture-reflection span {
+    font-size:0;
+}
+.culture-reflection span > .hs_cos_wrapper_type_custom_widget {
+    width:calc(100% / 4);
+    display:inline-block;
+    margin-top:50px;
+}
+.culture-reflection-item {
+    padding:0 30px;
+}
+.culture-icon-wrapper {
+    margin-bottom:12px;
+    height:115px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+@media only screen and (max-width:767px) {
+    .culture-reflection span > .hs_cos_wrapper_type_custom_widget {
+        display:block;
+        width:auto;
+    }
+    .culture-reflection-item {
+        font-size:0;
+    }
+    .culture-icon-wrapper {
+        margin-bottom:0;
+        width:90px;
+        height:auto;
+        display:inline-block;
+        vertical-align:middle;
+        text-align:center;
+    }
+    .culture-icon-wrapper img {
+        width:80%;
+        height:auto;
+        display:inline-block;
+    }
+    .culture-reflection-item .hs_cos_wrapper_type_rich_text {
+        width:calc(100% - 90px - 10px);
+        margin-left:10px;
+        display:inline-block;
+        vertical-align:middle;
+        font-size:18px;
+    }
+    .culture-reflection span > .hs_cos_wrapper_type_custom_widget:nth-child(even) .culture-icon-wrapper {
+        float:right;
+    }
+    .culture-reflection span > .hs_cos_wrapper_type_custom_widget:nth-child(even) .hs_cos_wrapper_type_rich_text {
+        float:left;
+        margin-left:0;
+        margin-right:10px;
+    }
+    .culture-reflection span > .hs_cos_wrapper_type_custom_widget:nth-child(even) .culture-reflection-item::after {
+        content:"";
+        width:100%;
+        display:table;
+        clear:both;
+    }
+}
+
+.team-filter {
+    margin-top:40px;
+}
+.horizontal-filter {
+    font-size:0;
+}
+.horizontal-filter-mobile {
+    display:none;
+}
+.horizontal-filter li {
+    display:inline-block;
+    padding:2px 7px;
+    cursor:pointer;
+    transition:0.2s;
+}
+.horizontal-filter li:hover {
+    background:#d5d5d5;
+}
+.horizontal-filter li + li {
+    margin-left:18px;
+}
+.horizontal-filter li.active {
+    color:#FFF;
+    background:#D68230;
+}
+@media only screen and (max-width:767px) {
+    .horizontal-filter {
+        display:none;
+    }
+    .team-filter-mobile {
+        margin-top:20px;
+        margin-bottom:35px;
+    }
+    .horizontal-filter-mobile {
+        width:100%;
+        display:block;
+        padding:12px;
+        text-transform:uppercase;
+        font-family:"freight-sans-pro";
+        font-weight:600;
+        font-size:18px;
+        letter-spacing:0.095em;
+        border:2px solid;
+        border-radius:6px;
+        background-image:url(https://www.saltedstone.com/hubfs/2018/filter-arrow.svg);
+        background-repeat:no-repeat;
+        background-position:95% center;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+    }
+    .horizontal-filter-mobile option {
+        color:#000;
+    }
+}
+
+.employees {
+    font-size:0;
+}
+.employees .team {
+    vertical-align:top;
+    display:inline-block;
+    width:calc(100% / 5);
+    margin-top:55px;
+    padding:0 5px;
+}
+.team-thumb-bg {
+    position:relative;
+    padding:15px;
+    background:url(https://www.saltedstone.com/hubfs/2018/about/portraitBG.svg) center top no-repeat;
+    transition:0.2s;
+}
+.team-thumb-bg::after {
+    content:"";
+    background:#FFF;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    opacity:0.5;
+    z-index:0;
+}
+.team-thumb {
+    z-index:1;
+    position:relative;
+    border-radius:50%;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+.team:hover .team-thumb-bg {
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
+}
+/* Team Locations */
+.team-thumb-bg:before {
+    content:"";
+    display:block;
+    width:18%;
+    height:17%;
+    position:absolute;
+    bottom:23%;
+    left:5%;
+    z-index:2;
+}
+.california .team-thumb-bg:before {
+    /*background:url(https://www.saltedstone.com/hubfs/2018/about/cali.svg) center center no-repeat;*/
+    /* background:url(https://www.saltedstone.com/hubfs/2018/about/usa.svg) center center no-repeat; */
+    background-size:100% auto;
+}
+.australia .team-thumb-bg:before {
+    /* background:url(https://www.saltedstone.com/hubfs/2018/about/aus.svg) center center no-repeat; */
+    background-size:100% auto;
+}
+.philippines .team-thumb-bg:before {
+    /* background:url(https://www.saltedstone.com/hubfs/2018/about/phillipines.svg) center center no-repeat; */
+    background-size:100% auto;
+}
+.emea .team-thumb-bg:before {
+    /* background:url(https://www.saltedstone.com/hubfs/2018/about/ireland.svg) center center no-repeat; */
+    background-size:100% auto;
+}
+.team-thumb img {
+    max-width:100%;
+    height:auto;
+}
+.team-info {
+    position:relative;
+    z-index:1;
+}
+.team-info .name {
+    color:#191E25;
+    margin-bottom:7px;
+}
+.team-info .title5 {
+    font-size:24px;
+}
+.team-info .title4 {
+    font-size:14px;
+}
+.job-title {
+    padding:0 10px;
+  	display:block;
+}
+
+@media only screen and (max-width:767px) {
+    .employees .team {
+        display:block;
+        width:100%;
+        border-bottom:2px solid #EBEBE5;
+        margin-top:0;
+        margin-bottom:20px;
+        padding:0 0 20px 0;
+    }
+    .team-thumb-bg {
+        padding:0;
+        background:none;
+        width:80px;
+        height:80px;
+        display:inline-block;
+        vertical-align:middle;
+    }
+    .team-thumb-bg::before, .team-thumb-bg::after {
+        display:none;
+    }
+    .team-info {
+        width:calc(100% - 80px - 20px);
+        display:inline-block;
+        vertical-align:middle;
+        margin-left:20px;
+        text-align:left;
+    }
+    .team-info .title5 {
+        font-size:21px;
+    }
+    .team-info .title4 {
+        font-size:12px;
+    }
+}
+
+#about-footer {
+    background:url(https://www.saltedstone.com/hubfs/2018/about/your-move-bg.jpg) center center no-repeat;
+    background-size:contain;
+    padding-bottom:260px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.about-footer-icon-wrap {
+    margin-top:-70px;
+}
+#about-footer h2 {
+    padding:65px 0;
+}
+.about-footer-ctas .hs-cta-wrapper + .hs-cta-wrapper {
+    margin-left:20px;
+}
+@media only screen and (max-width:767px) {
+    #about-footer {
+        background-size:cover;
+        margin:50px -15px 0;
+        padding-bottom:100px;
+        width:calc(100% + 30px);
+    }
+    #about-footer > div > img {
+        -webkit-transform:scale(0.7);
+        -ms-transform:scale(0.7);
+        transform:scale(0.7);
+    }
+    .about-footer-icon-wrap {
+        margin-top:-90px;
+        -webkit-transform:scale(0.6);
+        -ms-transform:scale(0.6);
+        transform:scale(0.6);
+    }
+    #about-footer h2 {
+        padding:10px 0 40px;
+    }
+    #about-footer strong {
+        display:block;
+        margin-top:10px;
+    }
+    .about-footer-ctas .button {
+        display:block;
+        width:auto;
+    }
+    .about-footer-ctas .hs-cta-wrapper {
+        display:block;
+    }
+    .about-footer-ctas .hs-cta-wrapper + .hs-cta-wrapper {
+        margin-top:20px;
+        margin-left:0;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2D | Contact Page
+|--------------------------------------------------------------------------
+*/
+
+.contact-page .header-container-wrapper {
+  z-index:1;
+}
+#contact-header-section {
+    background:url(//www.saltedstone.com/hubfs/2018/contact/talk-bg.jpg) center center no-repeat;
+}
+#contact-header-section.section {
+    padding-top:30px;
+}
+#contact-icons img {
+    max-width:75%;
+    transition:0.2s ease-out;
+  	cursor:pointer;
+}
+#contact-icons img:hover {
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
+}
+#contact-icons h3 {
+    padding-top:1.8em;
+}
+
+#contact-arrow {
+    position:fixed;
+    bottom:95px;
+    right:7px;
+    height:172px;
+    width:76px;
+    background:url(//landing.saltedstone.com/hubfs/2018/contact/arrow.svg) center center no-repeat;
+    background-size:contain;
+    pointer-events:none;
+    transition:0.2s;
+    opacity:0;
+}
+#contact-arrow.bounceInDown {
+    opacity:1;
+    transition:0.2s;
+}
+
+.contact-social li + li {
+    margin-left:30px;
+}
+.contact-social a {
+    color:currentColor;
+    font-size:32px;
+}
+
+.desktop-locations.title1 {
+    text-transform:uppercase;
+}
+.desktop-locations .col-3 {
+    height:600px;
+    box-sizing:border-box;
+    border-left:2px solid #FFF;
+}
+.desktop-locations .col-3:first-child {
+    border-left:0;
+}
+.split-location {
+    height:50%;
+}
+.split-location + .split-location {
+    border-top:2px solid #FFF;
+}
+.location-subtitle {
+    opacity:0.6;
+}
+
+.location-item {
+    position:relative;
+    background-size:cover;
+}
+.location-item:before {
+    content:"";
+    opacity:0;
+    display:block;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.7);
+    transition:0.2s;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+}
+.location-item:after {
+    content:"";
+    opacity:0;
+    display:block;
+    height:100%;
+    width:100%;
+    background-image:url(//www.saltedstone.com/hubfs/topo-texture.svg);
+    background-size:auto 300%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    transition:0.2s;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+}
+.location-item:nth-child(2):after {
+    background-position:bottom left;
+}
+.split-location.location-item:after {
+    background-position:top right;
+    background-size:auto 400%;
+}
+.split-location.location-item:nth-child(2):after {
+    background-position:left center;
+}
+.location-info {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:30px;
+    z-index:1;
+}
+.location-text {
+    opacity:0;
+    transition:0.2s;
+    font-size:18px;
+    padding-top:30px;
+    line-height:1.4em;
+}
+.directions-link {
+    margin-top:30px;
+    display:block;
+}
+.directions-link .symbol {
+    font-size:1em;
+}
+.location-item:hover .location-text, .location-item:hover:before {
+    opacity:1;
+}
+.location-item:hover:after {
+    opacity:0.1;
+}
+.location-info h3 {
+    font-size:30px;
+}
+.location-info h4 {
+    font-size:18px;
+}
+.location-subtitle {
+    opacity:0.6;
+}
+
+#contact-default {
+    max-width:666px;
+    margin:0 auto;
+}
+#generic-contact {
+    margin:0 auto;
+    max-width:818px;
+    position:relative;
+    z-index:3;
+}
+.contact-close {
+    position:fixed;
+    top:25px;
+    left:25px;
+    width:24px;
+    height:24px;
+    background:url(//www.saltedstone.com/hubfs/contact-close.svg) center center no-repeat;
+    cursor:pointer;
+    z-index:3;
+}
+#lead-flow {
+    position:relative;
+    z-index:3;
+}
+#region-map {
+    max-width:1000px;
+    margin:0 auto;
+}
+#region-map svg {
+    width:100%;
+    height:auto;
+}
+.region-area:hover {
+    fill:#D68230;
+    opacity:1;
+}
+#overall-map {
+    pointer-events:none;
+}
+#schedule-select {
+    display:none;
+    position:relative;
+    z-index:3;
+}
+#schedule-select > div {
+    display:none;
+}
+
+#contact-overlay {
+    display:none;
+    opacity:0.9;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:2;
+}
+.overlay-fix {
+    position:relative;
+    z-index:3
+}
+
+#mobile-locations {
+    position:relative;
+    z-index:3;
+}
+.mobile-location-item {
+    margin-top:50px;
+}
+.mobile-location-thumb-wrap {
+    border-radius:50%;
+    overflow:hidden;
+    display:inline-block;
+    margin-bottom:20px;
+}
+.mobile-location-thumb {
+    width:100px;
+    height:100px;
+    position:relative;
+}
+.mobile-location-thumb img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+.mobile-location-thumb .check-proportion {
+    width:100%;
+    height:auto;
+}
+.mobile-location-thumb .check-proportion.wider {
+    height:100%;
+    width:auto;
+}
+.mobile-location-text {
+    font-size:18px;
+    line-height:1.5em;
+    padding-top:10px;
+}
+.mobile-location-text .directions-link {
+    display:inline-block;
+    margin-top:20px;
+}
+
+
+
+@media only screen and (max-width:767px) {
+    #contact-header-section {
+        background-size:120% auto;
+        background-position:top center;
+    }
+    .banner-intro-image img {
+        width:50%!important;
+    }
+    .banner-icon img {
+        width:20%!important;
+    }
+    
+    #contact-icons .span4 {
+        margin-top:30px;
+    }
+    
+    .desktop-locations {
+        display:none;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2E | Blog
+|--------------------------------------------------------------------------
+*/
+
+.hs-blog-listing #progress-bar {
+    display:none!important;
+}
+#progress-bar {
+    position:fixed;
+    height:6px;
+    left:0;
+    top:0;
+    z-index:100;
+    transition:opacity 0.4s;
+    max-width:100vw;
+    opacity:0;
+}
+@media only screen and (max-width:767px) {
+    #progress-bar {
+        height:4px;
+    }
+}
+@media only screen and (min-width:768px) {
+    #progress-bar {
+        transition:width 0.1s, opacity 0.4s;
+    }
+}
+
+/* Blog Nav */
+#blog-filter.section {
+    padding:30px;
+}
+#site-header #blog-menu .hs-menu-wrapper {
+    text-align:left;
+    padding:0;
+}
+#site-header #blog-menu .hs-menu-wrapper li {
+    padding:7px 0 8px;
+}
+#site-header #blog-menu .hs-menu-wrapper li:first-child {
+    padding-right:30px;
+    border-right:1px solid #7F7F73;
+}
+#site-header #blog-menu .hs-menu-wrapper li + li {
+    margin-left:30px;
+}
+#site-header #blog-menu .hs-menu-wrapper a {
+    font-size:15px;
+}
+#site-header #blog-menu .hs-menu-wrapper li:first-child a {
+    color:#D68320;
+}
+@media only screen and (max-width:767px) {
+    #site-header #blog-menu .hs-menu-wrapper {
+        padding:35px;
+    }
+    #site-header #blog-menu .hs-menu-wrapper li {
+        padding:0;
+    }
+    #site-header #blog-menu .hs-menu-wrapper li:first-child {
+        padding-right:0;
+        border:none;
+    }
+    #site-header #blog-menu .hs-menu-wrapper li:first-child a {
+        color:#FFF;
+    }
+    #site-header #blog-menu .hs-menu-wrapper li:first-child a:hover {
+        color:#D68230;
+    }
+    #site-header #blog-menu .hs-menu-wrapper li + li {
+        margin-left:0;
+        margin-top:20px;
+    }
+}
+
+/* Blog Filter */
+.hs-blog-name-salted-stone-blog .header-container-wrapper {
+    position:relative;
+    z-index:3;
+}
+#blog-filter-wrap {
+    text-align:right;
+}
+.filter-item {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+}
+.filter-item + .filter-item {
+    margin-left:45px;
+}
+#blog-filter-wrap .button, .filter-title {
+    font-size:18px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.095em;
+    position:relative;
+}
+.filter-title {
+    padding:18px 0;
+}
+.filter-title .symbol {
+    font-size:1em;
+}
+#filter-search .filter-title .symbol {
+    font-size:26px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.filter-content {
+    max-width:990px;
+    width:100vw;
+    padding:14%;
+    position:absolute;
+    right:-20.5px;
+    top:calc(100% + 9px);
+    font-size:0;
+    visibility:hidden;
+    opacity:0;
+    transition:0.1s 0.1s;
+}
+.filter-content .button {
+    margin:15px;
+    width:calc((100% - 90px) / 3);
+}
+.filter-content .button:hover {
+    background-color:#D68230;
+}
+.filter-item:hover .filter-content {
+    visibility:visible;
+    opacity:1;
+    transition:0s;
+}
+.filter-item:hover .filter-title {
+    color:#FFF;
+}
+.filter-item .filter-title:before {
+    display:block;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:50%;
+    left:50%;
+    background:#151e28;
+    z-index:-1;
+    padding:0 20px 20px 20px;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    transition:0.1s 0.1s;
+    opacity:0;
+    visibility:hidden;
+}
+.filter-item:hover .filter-title:before {
+    opacity:1;
+    visibility:visible;
+    transition:0s;
+}
+.filter-item:hover .filter-title:after {
+    content:"";
+    width:40px;
+    height:2px;
+    background:#D68230;
+    display:block;
+    position:absolute;
+    top:calc(100% + 10px);
+    left:50%;
+    margin-left:-20px;
+    z-index:1;
+}
+
+#filter-search.filter-item:hover .filter-title:after {
+    width:24px;
+    margin-left:-12px;
+}
+#filter-search .filter-content {
+    right:auto;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform:translateX(-50%);
+    text-align:center;
+    padding:40px;
+}
+#search-field {
+    color:#FFF;
+    font-size:30px;
+    font-family:"industry";
+    font-weight:300;
+    padding:4px 0;
+    width:calc(100% - 50px - 25px);
+    margin-right:25px;
+    background:none;
+    border:none;
+    border-radius:0;
+    border-bottom:2px solid #FFF;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    display:inline-block;
+    vertical-align:bottom;
+}
+#search-button {
+    cursor:pointer;
+    color:#D68230;
+    font-size:46px;
+    text-align:center;
+    line-height:50px;
+    width:50px;
+    height:50px;
+    border:2px solid #D68230;
+    border-radius:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    display:inline-block;
+    vertical-align:bottom;
+    transition:0.2s;
+}
+#search-button:hover {
+    color:#FFF;
+    background:#D68230;
+}
+
+#filter-type .filter-content {
+    max-width:375px;
+}
+#filter-type .filter-content .button {
+    width:92%;
+    display:block;
+}
+
+@media only screen and (max-width:767px) {
+    #blog-filter.section {
+        padding:7px 0 11px;
+    }
+    .nav-blog-filter-wrap {
+        display:none!important;
+    }
+}
+
+/* Common Blog Classes */
+.blog-header-topic {
+    padding:10px 23px;
+    margin:-10px 0 20px -80px;
+    display:inline-block;
+}
+
+.blog-author-photo {
+    width:67px;
+    height:67px;
+    overflow:hidden;
+    border-radius:50%;
+    display:inline-block;
+    position:relative;
+    vertical-align:middle;
+}
+.blog-author-photo img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width:100%;
+    height:auto;
+    display:block;
+}
+.blog-author-description {
+    vertical-align:middle;
+    display:inline-block;
+    margin-left:20px;
+}
+.blog-author-post-info {
+    font-size:16px;
+}
+@media only screen and (max-width:767px) {
+    .blog-author-photo {
+        width:50px;
+        height:50px;
+    }
+    .blog-author-post-info {
+        font-size:14px;
+    }
+}
+
+/* Listing Banner */
+.hs-blog-listing .page-center {
+    max-width:1440px;
+}
+#listing-banner {
+    position:relative;
+    margin-bottom:115px;
+}
+#listing-banner:before {
+    content:"";
+    background:url(//www.saltedstone.com/hubfs/2018/blog/single-overlay.svg) center center no-repeat;
+    position:absolute;
+    top:0;
+    right:0;
+    width:1382px;
+    height:584px;
+    max-width:100%;
+    z-index:1;
+    pointer-events:none;
+}
+#listing-banner:after {
+    background:url(//www.saltedstone.com/hubfs/2018/blog/single-underlay.svg) center center no-repeat;
+    position:relative;
+    content:"";
+    display:block;
+    height:416px;
+    width:106px;
+    position:absolute;
+    top:50%;
+    right:0;
+    -webkit-transform:translate(50%, -75%);
+    -ms-transform:translate(50%, -75%);
+    transform:translate(50%, -75%);
+    z-index:-1;
+    pointer-events:none;
+}
+.list-banner-slide {
+    padding-bottom:150px;
+    position:relative;
+}
+.list-banner-image-wrap {
+    display:block;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.list-banner-image-wrap:after {
+    content:"";
+    /*padding-bottom:46.42%;*/
+    padding-bottom:43.6%;
+    display:block;
+}
+.list-banner-image-wrap img {
+    width:100%;
+    height:auto;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+.slide-intro-box {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:50%;
+    padding:40px;
+}
+.slide-intro-timer {
+    top:0;
+    left:0;
+    width:0;
+    height:8px;
+    position:absolute;
+}
+
+.post-description {
+    padding:20px 0 25px;
+}
+
+#listing-banner .slick-dots {
+    position:absolute;
+    left:35px;
+    bottom:111px;
+    font-size:0;
+    display:inline-block;
+    z-index:1;
+}
+#listing-banner .slick-dots li {
+    display:none;
+}
+#listing-banner .slick-dots li.slick-active {
+    display:inline-block;
+}
+#listing-banner .slick-dots button {
+    padding:0;
+    margin:0;
+    border:none;
+    background:none;
+    font-size:16px;
+    font-family:"industry", sans-serif;
+    font-weight:300;
+}
+#listing-banner .slick-dots li.slick-active button:before {
+    content:"0";
+}
+#listing-banner .slick-dots li.slick-active button {
+    font-weight:900;
+    font-size:17px;
+}
+#listing-banner .slick-arrow {
+    position:absolute;
+    bottom:115px;
+    z-index:1;
+}
+#listing-banner .slick-prev {
+    left:0;
+    padding:0;
+    margin:0;
+    border:none;
+    border-radius:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    width:19px;
+    height:15px;
+    background:url(//www.saltedstone.com/hubfs/listing-prev.svg) center center no-repeat;
+}
+#listing-banner .slick-next {
+    left:100px;
+    padding:0;
+    margin:0;
+    border:none;
+    border-radius:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    width:19px;
+    height:15px;
+    background:url(//www.saltedstone.com/hubfs/listing-next.svg) center center no-repeat;
+}
+@media only screen and (max-width:767px) {
+    #listing-banner {
+        background:#ebebe5;
+        width:calc(100% + 30px);
+        margin:0 -15px;
+    }
+    .list-banner-slide {
+        padding-bottom:0;
+    }
+    .slide-intro-box {
+        position:static;
+        width: calc(100% - 30px);
+        margin: -20px 15px 0;
+        transform: translateY(0px);
+        padding: 15px;
+    }
+    #listing-banner .blog-header-topic {
+        margin:5px 0 13px;
+        color:#d68231;
+        background:none;
+        padding:0;
+    }
+    #listing-banner .post-description {
+        display:none;
+    }
+    #listing-banner .blog-author-meta {
+        padding-top:30px;
+    }
+    
+    #listing-banner .slick-arrow {
+        display:none!important;
+    }
+    
+    #listing-banner .slick-dots {
+        position:static;
+        padding:20px 0;
+        width:100%;
+        text-align: center;
+    }
+    #listing-banner .slick-dots::after {
+        display:none;
+    }
+    #listing-banner .slick-dots button {
+        font-size:0;
+        width:12px;
+        height:12px;
+        background:#b7b7af;
+        border-radius:50%;
+        display:block;
+        transition:0.2s;
+    }
+    #listing-banner .slick-dots li {
+        display:inline-block;
+    }
+    #listing-banner .slick-dots li + li {
+        margin-left:15px;
+    }
+    #listing-banner .slick-dots li.slick-active button {
+        font-size:0;
+        background:#7f7f73;
+    }
+    #listing-banner .slick-dots li.slick-active button::before {
+        display:none;
+    }
+}
+
+/* Listing Item */
+.listing-row + .listing-row {
+    margin-top:115px;
+}
+.list-post-item {
+    padding:0 30px;
+    position:relative;
+}
+.list-post-item + .list-post-item::before {
+    content:"";
+    display:block;
+    height:100%;
+    width:0;
+    border-left:1px solid rgba(151,151,151,0.3);
+    position:absolute;
+    top:0;
+    left:-3.9%;
+}
+.list-post-thumbnail-wrap {
+    position:relative;
+    margin-bottom:24px;
+}
+.list-post-thumbnail-link {
+    display:block;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.list-post-thumbnail-link::after {
+    content:"";
+    display:block;
+    padding-bottom:56%;
+}
+.list-post-thumbnail-link img {
+    width:100%;
+    height:215px;
+    object-fit: cover;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+.blog-list-topic {
+    padding:7px 20px;
+    display:inline-block;
+    position:absolute;
+    bottom:20px;
+    left:-30px;
+}
+.list-post-item .blog-author-photo {
+    width:40px;
+    height:40px;
+}
+.list-post-item .hs_cos_wrapper_type_rich_text {
+    font-size:18px;
+}
+.list-post-item .title4, .list-post-item .blog-author-post-info {
+    font-size:14px;
+}
+@media only screen and (max-width:767px) {
+    .blog-listing-wrapper {
+        padding-top:50px;
+    }
+    .list-post-item {
+        padding:0 15px;
+    }
+    .list-post-item + .list-post-item {
+        margin-top:60px;
+    }
+    .list-post-thumbnail-wrap {
+        margin-bottom:10px;
+    }
+    .list-post-item .blog-list-topic {
+        position:static;
+        padding:0;
+        color:#D68230;
+        background:none;
+        margin-top:20px;
+    }
+    .list-post-item .post-description {
+        display:none;
+    }
+    .list-post-item .blog-author-meta {
+        padding-top:13px;
+    }
+}
+
+/* Featured Case Study Interstitial */
+#case-study-interstitial {
+    margin:100px -15px 150px;
+    width:calc(100% + 30px);
+}
+#case-study-interstitial .title3 {
+    font-size:38px;
+}
+.fcs-slide {
+    max-width:920px;
+    padding-right:5%;
+}
+.fcs-slide-inner > * {
+    vertical-align:top;
+}
+.fcs-thumbnail {
+    padding-bottom:81.52%;
+    width:100%;
+    display:block;
+}
+.fcs-content {
+    padding:3%;
+}
+.fcs-content .blog-author-photo {
+    width:40px;
+    height:40px;
+}
+.fcs-content .hs_cos_wrapper_type_rich_text {
+    font-size:18px;
+}
+.fcs-content .title4, .fcs-content .blog-author-post-info {
+    font-size:14px;
+}
+
+#featured-case-study-rotator {
+    margin-top:20px;
+}
+#featured-case-study-rotator .slick-dots {
+    position:absolute;
+    left:35px;
+    bottom:-64px;
+    font-size:0;
+    display:inline-block;
+    z-index:1;
+}
+#featured-case-study-rotator .slick-dots li {
+    display:none;
+}
+#featured-case-study-rotator .slick-dots li.slick-active {
+    display:inline-block;
+}
+#featured-case-study-rotator .slick-dots button {
+    padding:0;
+    margin:0;
+    border:none;
+    background:none;
+    font-size:16px;
+    font-family:"industry", sans-serif;
+    font-weight:300;
+}
+#featured-case-study-rotator .slick-dots li.slick-active button:before {
+    content:"0";
+}
+#featured-case-study-rotator .slick-dots li.slick-active button {
+    font-weight:900;
+    font-size:17px;
+}
+#featured-case-study-rotator .slick-arrow {
+    position:absolute;
+    bottom:-59px;
+    z-index:1;
+}
+#featured-case-study-rotator .slick-prev {
+    left:0;
+    padding:0;
+    margin:0;
+    border:none;
+    border-radius:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    width:19px;
+    height:15px;
+    background:url(//www.saltedstone.com/hubfs/listing-prev.svg) center center no-repeat;
+}
+#featured-case-study-rotator .slick-next {
+    left:100px;
+    padding:0;
+    margin:0;
+    border:none;
+    border-radius:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-100px;
+    overflow:hidden;
+    width:19px;
+    height:15px;
+    background:url(//www.saltedstone.com/hubfs/listing-next.svg) center center no-repeat;
+}
+@media only screen and (max-width:767px) {
+    #case-study-interstitial {
+        padding-bottom:90px;
+    }
+    #case-study-interstitial .title3 {
+        font-size:30px;
+    }
+    .fcs-slide {
+        padding-right:0;
+        max-width:none;
+    }
+    .fcs-slide-inner  .col-2 {
+        width:auto;
+        display:block;
+    }
+    .fcs-content {
+        padding:7%;
+    }
+    .fcs-content .post-description {
+        display:none;
+    }
+    .fcs-content .blog-author-meta {
+        padding-top:18px;
+    }
+    
+    #featured-case-study-rotator .slick-arrow {
+        bottom:-53px;
+    }
+    #featured-case-study-rotator .slick-dots {
+        bottom:-57px;
+    }
+}
+
+
+/* Blog Interstitial */
+#blog-sub-interstitial {
+    background:url(https://www.saltedstone.com/hubfs/2018/blog/blog-sub-bg.svg) center calc(50% + 30px) no-repeat;
+}
+.blogsub-icon-wrap {
+    margin-top:-70px;
+    margin-left:-15px;
+    padding-bottom:30px;
+}
+#blog-sub-interstitial form {
+    max-width:380px;
+    margin:0 auto;
+}
+@media only screen and (max-width:767px) {
+    #blog-sub-interstitial {
+        background:none;
+    }
+    #blog-sub-interstitial .title1.small {
+        font-size:30px;
+        padding-bottom:30px;
+    }
+    #blog-sub-interstitial .hs_cos_wrapper_type_rich_text {
+        display:none;
+    }
+    #blog-sub-interstitial > img {
+        width:50%;
+    }
+    .blogsub-icon-wrap {
+        width:20%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:-44px;
+    }
+    .blogsub-icon-wrap img {
+        max-width:100%;
+    }
+}
+
+/* Blog Pagination */
+.blog-pagination {
+    text-align:center;
+    font-size:0;
+}
+.blog-pagination a {
+    color:inherit;
+}
+.blog-pagination li {
+    font-family:"industry", sans-serif;
+    font-weight:300;
+    font-size:30px;
+    display:inline-block;
+    vertical-align:middle;
+    margin:0 12px;
+    opacity:0.3;
+    transition:0.2s;
+}
+.blog-pagination li:hover {
+    opacity:1;
+}
+.blog-pagination li.active {
+    font-weight:600;
+    opacity:1;
+}
+.pagination-prev {
+    margin-right:40px;
+}
+.pagination-next {
+    margin-left:40px;
+}
+@media only screen and (max-width:767px) {
+    .blog-pagination {
+        text-align:justify;
+    }
+    .blog-pagination img {
+        width:24px;
+        height:auto;
+    }
+    .blog-pagination::after {
+        content:"";
+        display:inline-block;
+        width:100%;
+        height:0;
+    }
+    .blog-pagination li {
+        
+        font-size:25px;
+    }
+    
+}
+
+/* Single Header */
+.single-banner-wrap {
+    position:relative;
+}
+.single-banner-wrap:before {
+    content:"";
+    background:url(//www.saltedstone.com/hubfs/2018/blog/single-overlay.svg) center center no-repeat;
+    position:absolute;
+    top:0;
+    right:0;
+    width:1382px;
+    height:584px;
+    max-width:100%;
+    z-index:1;
+}
+.single-banner {
+    position:relative;
+    overflow:hidden;
+    display:block;
+    z-index:0;
+}
+.single-banner:after {
+    content:"";
+    padding-bottom:43.6%;
+    width:100%;
+    display:block;
+}
+.single-banner img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width:100%;
+    height:auto;
+}
+.single-banner-wrap:after {
+    background:url(//www.saltedstone.com/hubfs/2018/blog/single-underlay.svg) center center no-repeat;
+    content:"";
+    display:block;
+    height:416px;
+    width:106px;
+    position:absolute;
+    top:50%;
+    right:0;
+    -webkit-transform:translate(50%, -75%);
+    -ms-transform:translate(50%, -75%);
+    transform:translate(50%, -75%);
+    z-index:-1;
+}
+@media only screen and (max-width:767px) {
+    .single-banner:after {
+        padding-bottom:50%;
+    }
+    .single-banner-wrap::before {
+        top:-6px;
+        width:99%;
+        height:180px;
+        background-size:100% auto;
+    }
+    .single-banner-wrap {
+        width:calc(100% + 30px);
+        margin:0 -15px;
+    }
+}
+
+/* Single Post */
+.a2a_kit {
+    position:absolute;
+    top:150px;
+    left:-70px;
+}
+.a2a_button {
+    width:40px;
+    height:40px;
+    line-height:40px!important;
+    text-align:center;
+    border-radius:50%;
+    color:#FFF;
+    background:#191E25;
+    transition:0.2s;
+    font-size:14px;
+    float:none!important;
+    padding:0!important;
+    display:block;
+}
+.a2a_button + .a2a_button {
+    margin-top:10px;
+}
+.a2a_button:hover {
+    background:#007297;
+}
+.a2a_img_text {
+    display:none!important;
+}
+.a2a_button.a2a_dd {
+    font-size:26px;
+}
+#a2apage_thanks_a2a_ad {
+  	display:none!important;
+}
+@media only screen and (max-width:767px) {
+    .a2a_kit {
+        position:fixed;
+        top:auto;
+        bottom:0;
+        left:0;
+        width:100%;
+        background:#007297;
+        padding:8px 20px;
+        line-height:1!important;
+    }
+    .a2a_button {
+        width: auto;
+        height: auto;
+        line-height: 1 !important;
+        background: none;
+        display: inline-block;
+        vertical-align:middle;
+        font-size:18px;
+    }
+    .a2a_button + .a2a_button {
+        margin-top:0;
+        margin-left:30px;
+    }
+}
+
+.hs-blog-post .page-center {
+    max-width:1440px;
+}
+.single-blog-section {
+    padding-left:70px;
+    position:relative;
+}
+.blog-post-wrapper {
+    margin:-120px auto 0;
+    padding:0 4%;
+    max-width:840px;
+    position:relative;
+    z-index:1;
+}
+.blog-post-wrapper .blog-header-topic {
+    margin:-10px 0 30px -80px;
+}
+.title7.single-title {
+    padding-bottom:25px;
+}
+@media only screen and (max-width:767px) {
+    .blog-post-wrapper {
+        margin-top:-30px;
+    }
+    .single-blog-section {
+        padding-left:0;
+    }
+    .post-header {
+        padding-bottom:40px;
+    }
+    .blog-post-wrapper .blog-header-topic {
+        margin:-8px 0 20px -29px;
+    }
+    .title7.single-title {
+        font-size:36px;
+    }
+    
+    .hs-blog-post #blog-sub-interstitial, .hs-blog-post .related-posts-wrap {
+        z-index:-1;
+    }
+}
+
+/* Blog Content Stuff */
+.post-body h2 {
+    font-family:"industry";
+    font-size:36px;
+    line-height:1em;
+    font-weight:400;
+}
+.post-body h3 {
+}
+.post-body h4 {
+}
+.post-body h5 {
+}
+.post-body h6 {
+}
+hr {
+    border:none;
+    display:block;
+    margin:55px auto;
+    width:20%;
+    max-width:194px;
+    padding-bottom:6.18%;
+    background:url(https://www.saltedstone.com/hubfs/2018/hr.svg) center center no-repeat;
+    background-size:100% auto;
+}
+blockquote {
+    font-size:28px;
+    color:#D68230;
+    font-style:italic;
+    line-height:1.5em;
+    display:block;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+blockquote a {
+    color:inherit;
+    border-bottom:1px dotted;
+}
+@media only screen and (max-width:767px) {
+    hr {
+        width:50%;
+    }
+}
+/* Contact Author */
+.contact-author-block {
+    position:fixed;
+    bottom:100px;
+    right:0;
+    padding:40px;
+    max-width:340px;
+    text-align:center;
+    z-index:1;
+    -webkit-transform:translateX(100%);
+    -ms-transform:translateX(100%);
+    transform:translateX(100%);
+    transition:0.35s;
+}
+.contact-author-block.visible {
+    -webkit-transform:translateX(0%);
+    -ms-transform:translateX(0%);
+    transform:translateX(0%);
+}
+.contact-author-close {
+    position:absolute;
+    top:18px;
+    right:18px;
+    cursor:pointer;
+}
+.contact-author-block::before {
+    content:"";
+    display:block;
+    background:url(//www.saltedstone.com/hubfs/2018/blog/author-contact-top.png) center center no-repeat;
+    background-size:100% auto;
+    width:289px;
+    height:85px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.contact-author-block::after {
+    content:"";
+    display:block;
+    background:url(//www.saltedstone.com/hubfs/2018/blog/about-contact-side.png) center center no-repeat;
+    background-size:100% auto;
+    width:15px;
+    height:61px;
+    position:absolute;
+    top:45px;
+    right:18px;
+}
+.contact-author-photo-wrap {
+    position:relative;
+}
+.contact-author-photo {
+    width:105px;
+    height:105px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.contact-author-photo img {
+    max-width:100%;
+    height:auto;
+}
+.contact-author-block .hs_cos_wrapper_type_rich_text {
+    font-size:18px;
+    padding:15px 0 30px;
+}
+@media only screen and (max-width:767px) {
+  .contact-author-block {
+    display:none;
+  }
+}
+
+/* Related Posts */
+#related-posts {
+    margin-top:50px;
+}
+#related-posts .list-post-item::before {
+    display:none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2F | Solutions Tier 1
+|--------------------------------------------------------------------------
+*/
+
+.solution-animation-bullets li::marker {
+    color:#D68230;
+}
+.solution-animation-bullets li {
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.11em;
+}
+
+
+#solutions-intro {
+    font-size:0;
+}
+.solutions-intro-info {
+    width:calc(100% - 240px);
+    display:inline-block;
+    vertical-align:top;
+}
+.solutions-intro-nav {
+    width:240px;
+    display:inline-block;
+    vertical-align:top;
+}
+.solutions-mobile-mascot {
+    display:none;
+}
+@media only screen and (max-width:767px) {
+    .solutions-intro-info {
+        width:auto;
+        display:block;
+    }
+    .solutions-intro-nav {
+        display:none;
+    }
+    
+    .solutions-text-intro {
+        width:42%;
+        display:inline-block;
+        vertical-align:middle;
+    }
+    .solutions-mobile-mascot {
+        width:58%;
+        display:inline-block;
+        vertical-align:middle;
+        position:relative;
+        right:-30px;
+    }
+    
+    .solutions-char-qual {
+        margin-top:35px;
+    }
+}
+
+#solutions-intro h2 {
+    padding-bottom:10px;
+}
+#solutions-intro h1 {
+    padding-bottom:65px;
+}
+@media only screen and (max-width:767px) {
+    #solutions-intro h1 {
+        font-size:30px;
+        padding-bottom:30px;
+    }
+}
+
+.solutions-characteristics {
+    padding-right:25px;
+}
+.solutions-characteristics h3 {
+    padding-bottom:30px;
+}
+.solutions-characteristics ul {
+        padding-left:0;
+    }
+.solutions-characteristics li {
+    font-size:24px;
+    font-weight:600;
+    font-family:"industry";
+    text-transform:uppercase;
+    list-style-type:none;
+}
+.solutions-characteristics li + li {
+    margin-top:0.8em;
+}
+
+.solutions-qualifiers {
+    padding:35px;
+    position:relative;
+    min-height:100px;
+}
+.solutions-qualifiers::before {
+    content:"";
+    display:block;
+    width:135px;
+    height:3px;
+    background:#121920;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.solutions-qualifiers::after {
+    content:"";
+    display:block;
+    width:15px;
+    height:61px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/qualifier-detail.png) center center no-repeat;
+    background-size:100% auto;
+    position:absolute;
+    right:10px;
+    bottom:20px;
+}
+.solutions-qualifiers h3 {
+    position:relative;
+    display:inline-block;
+    margin-bottom:35px;
+}
+.solutions-qualifiers h3::before {
+    content:"";
+    display:block;
+    width:348px;
+    height:61px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/qualifier-title-bg.png) center center no-repeat;
+    background-size:100% auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+.solutions-qualifiers .hs_cos_wrapper_type_rich_text {
+    font-size:18px;
+}
+@media only screen and (max-width:767px) {
+    .solutions-characteristics {
+        text-align:left!important;
+    }
+    .solutions-characteristics h3 {
+        padding-bottom:15px;
+    }
+    .solutions-characteristics li {
+        font-size:16px;
+    }
+    .solutions-characteristics li + li {
+        margin-top:0;
+    }
+    
+    .solutions-qualifiers {
+        padding:20px;
+        margin-top:55px;
+    }
+    .solutions-qualifiers::after {
+        display:none;
+    }
+    .solutions-qualifiers h3 {
+        margin-bottom:25px;
+    }
+    .solutions-qualifiers h3::before {
+        width:268px;
+        height:47px;
+    }
+    .solutions-qualifiers .hs_cos_wrapper_type_rich_text {
+        font-size:15px;
+    }
+}
+
+.solutions-nav-item {
+}
+.solutions-nav-icon-wrap {
+    padding:20px 0;
+    text-align:center;
+    position:relative;
+    -webkit-transform: translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+.solutions-nav-tooltip {
+    text-align:left;
+    opacity:0;
+    display:block;
+    visibility: hidden;
+    position:absolute;
+    top:50%;
+    left:0;
+    -webkit-transform:translate(-100%, -68%);
+    -ms-transform:translate(-100%, -68%);
+    transform:translate(-100%, -68%);
+    transition:0.2s;
+    z-index:1;
+}
+.solutions-nav-item:hover .solutions-nav-tooltip {
+    opacity:1;
+    left:-15px;
+    visibility:visible;
+}
+.solutions-nav-item img {
+    -webkit-filter:grayscale(1) contrast(10) invert(1);
+    -ms-filter:grayscale(1) contrast(10) invert(1);
+    filter:grayscale(1) contrast(10) invert(1);
+    opacity:0.3;
+    transition:0.2s;
+}
+.solutions-nav-item:hover img {
+    -webkit-filter:none;
+    -ms-filter:none;
+    filter:none;
+    opacity:1;
+}
+.solutions-nav-item.current img {
+    opacity:1;
+}
+.solutions-nav-icon-wrap:before {
+    content:"";
+    display:block;
+    height:100%;
+    width:1px;
+    background:#121920;
+    position:absolute;
+    left:-50%;
+    top:0;
+}
+.current .solutions-nav-icon-wrap:after {
+    content:"";
+    display:block;
+    height:35%;
+    width:4px;
+    background:#121920;
+    position:absolute;
+    left:calc(-50% - 4px);
+    top:20px;
+}
+.solutions-intro-nav .hs_cos_wrapper_type_custom_widget:first-child .current .solutions-nav-icon-wrap:after {
+    top:0;
+}
+.solutions-nav-tooltip-subtitle {
+    font-size:10px;
+    padding:2px 6px;
+    display:inline-block;
+}
+.solutions-nav-tooltip-title {
+    font-size:15px;
+    padding:4px 7px;
+    display:inline-block;
+    position:relative;
+}
+.solutions-nav-tooltip .solutions-nav-tooltip-title::after {
+    content:"";
+    display:block;
+    width:0; 
+    height:0; 
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #121920;
+    position:absolute;
+    top:calc(50% - 5px);
+    left:100%;
+}
+
+.solution-hero {
+    -webkit-transform:translateY(-15%);
+    -ms-transform:translateY(-15%);
+    transform:translateY(-15%);
+    margin-bottom:-15%;
+}
+
+.engagement-icon-top .hs_cos_wrapper_type_widget_container, .engagement-icon-left .hs_cos_wrapper_type_widget_container {
+    font-size:0;
+}
+.engagement-icon-top .hs_cos_wrapper_type_custom_widget {
+    display:inline-block;
+    vertical-align:top;
+    width:calc(100% / 3);
+    margin-bottom:50px;
+}
+.engagement-icon-top .engagement-type {
+    padding-right:15%;
+}
+.engagement-icon-top .engagement-icon {
+    padding-bottom:15px;
+}
+.engagement-title a {
+    display:inline-block;
+    margin-top:10px;
+    font-size:12px!important;
+}
+@media only screen and (max-width:767px) {
+    .engagement-icon-top .hs_cos_wrapper_type_custom_widget {
+        width:auto;
+        display:block;
+        margin-bottom:30px;
+    }
+    .engagement-icon-top .engagement-icon {
+        width:40px;
+        display:inline-block;
+        vertical-align:middle;
+        padding-bottom:0;
+    }
+    .engagement-icon img {
+        max-width:100%;
+        height:auto;
+    }
+    .engagement-icon-top .engagement-title {
+        width:calc(100% - 40px - 20px);
+        margin-left:20px;
+        display:inline-block;
+        vertical-align:middle;
+    }
+}
+
+.engagement-icon-left .hs_cos_wrapper_type_custom_widget {
+    display:inline-block;
+    vertical-align:top;
+    width:calc(100% / 2);
+    margin-bottom:50px;
+}
+.engagement-icon-left .engagement-type {
+    font-size:0;
+    padding-right:15%;
+}
+.engagement-icon-left .engagement-icon {
+    width:70px;
+    display:inline-block;
+    vertical-align:top;
+}
+.engagement-icon-left .engagement-title {
+    width:calc(100% - 70px - 20px);
+    margin-left:20px;
+    display:inline-block;
+    vertical-align:top;
+}
+@media only screen and (max-width:767px) {
+    .engagement-icon-left .hs_cos_wrapper_type_custom_widget {
+        width:auto;
+        display:block;
+        margin-bottom:30px;
+    }
+    .engagement-icon-left .engagement-icon {
+        width:40px;
+        vertical-align:middle;
+    }
+    .engagement-icon-left .engagement-title {
+        width:calc(100% - 40px - 20px);
+        vertical-align:middle;
+    }
+}
+
+.solution-cta-title.title1 {
+    font-size:300px;
+    z-index:-1;
+}
+.solution-cta {
+    padding:35px;
+    position:relative;
+}
+.solution-cta::before {
+    content:"";
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/cta-top-left.svg) center center no-repeat;
+    position:absolute;
+    top:20px;
+    left:20px;
+    opacity:0.5;
+}
+.solution-cta .hs_cos_wrapper_type_rich_text {
+    padding:20px 0 30px;
+    display:block;
+}
+.solution-cta .button {
+    display:block;
+    font-size:18px;
+    padding:12px;
+}
+.solution-cta-main {
+    padding:90px 40px;
+    margin:0 -2.564102564% 0 0 !important;
+    position:relative;
+    z-index: 1;
+}
+.solution-cta-main::before {
+    content:"";
+    display:block;
+    width:33px;
+    height:33px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/cta-top-left.svg) center center no-repeat;
+    position:absolute;
+    top:20px;
+    left:20px;
+    opacity:0.5;
+}
+.solution-cta-main::after {
+    content:"";
+    display:block;
+    width:48px;
+    height:114px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/cta-main-bottom-right.svg) center center no-repeat;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+.solution-cta-main h3 {
+    padding:40px 0;
+}
+.solution-cta-main .button {
+    font-size:18px;
+    padding:12px;
+}
+@media only screen and (max-width:767px) {
+    .solution-cta-main {
+        padding:50px 35px;
+        margin:0 -15px!important;
+    }
+    .solution-cta-main h2 {
+        max-width:76%;
+        margin:0 auto;
+    }
+    .solution-cta-main .button {
+        display:block;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2G | Solutions Tier 2
+|--------------------------------------------------------------------------
+*/
+
+.tier-2-hero-wrap {
+    position:relative;
+    left:7%;
+}
+.tier-2-image-wrap {
+    overflow:hidden;
+    border-radius:50%;
+}
+.tier-2-image-wrap .square {
+    position:relative;
+}
+.spinner {
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:100%;
+    height:100%;
+    -webkit-transform:translate(-50%, -50%) scale(0.91);
+    -ms-transform:translate(-50%, -50%) scale(0.91);
+    transform:translate(-50%, -50%) scale(0.91);
+}
+.spinner img {
+    max-width:100%;
+    height:auto;
+    transition:0.1s;
+}
+.topo {
+    position:absolute;
+    z-index:-1;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width: 175%;
+    height: 175%;
+    opacity:0.5;
+    pointer-events: none;
+}
+.topo img {
+    max-width:100%;
+    height:auto;
+}
+.tier-2-hero-icon {
+    position:absolute;
+    left:5%;
+    bottom:8%;
+    border-radius:50%;
+    padding:10px;
+}
+.tier-2-hero-icon img {
+    -webkit-filter:grayscale(1) contrast(10);
+    -ms-filter:grayscale(1) contrast(10);
+    filter:grayscale(1) contrast(10);
+}
+
+@media only screen and (max-width:767px) {
+    #tier-2-fixed {
+        padding-top:35px;
+    }
+    .tier-2-hero-wrap {
+        left:0;
+    }
+}
+
+.solutions-tier-2 .solutions-intro-info {
+    width:100%;
+}
+@media only screen and (max-width:767px) {
+    .solutions-tier-2 .solutions-text-intro {
+        width:100%;
+    }
+}
+
+.solution-tier-2-cta {
+    position:relative;
+}
+.solution-tier-2-cta:before {
+    content:"";
+    position:absolute;
+    top:-18px;
+    left:-18px;
+    display:block;
+    width:370px;
+    height:60px;
+    background:url(//www.saltedstone.com/hubfs/2018/solutions/qualifier-title-bg.png) center center no-repeat;
+    background-size:cover;
+}
+.solutions-tier-2 .solution-cta-main {
+    padding:90px 10%;
+}
+.solutions-tier-2 .solution-cta-main::before {
+    top:auto;
+    bottom:20px;
+    -webkit-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+}
+.solutions-tier-2 .solution-cta-main::after {
+    top:20px;
+    bottom:auto;
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.solutions-shaka {
+    position:absolute;
+    bottom:-10px;
+    right:35px;
+    width:auto!important;
+}
+.solutions-shaka img {
+    position:relative;
+    top:-50px;
+    z-index:-1;
+}
+@media only screen and (max-width:767px) {
+    .solution-cta-main h2 {
+        max-width:100%;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2H | Work Index
+|--------------------------------------------------------------------------
+*/
+
+
+/*
+|--------------------------------------------------------------------------
+| 2I | Work Page
+|--------------------------------------------------------------------------
+*/
+.work-nav {
+    position:relative;
+    display:inline-block;
+    top:23px;
+}
+.work-nav img {
+    max-width:100%;
+}
+.work-module-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-size:130px auto;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color:rgba(0,0,0,0.7);
+    opacity:0;
+    transition:0.3s;
+}
+.work-module-content-wrap {
+    display:block;
+}
+.work-module-content-wrap.has-overlay {
+    position:relative;
+}
+.work-module-content-wrap.has-overlay:hover .work-module-overlay {
+    opacity:1;
+}
+.work-article-project-info {
+    padding:30px 0 40px;
+}
+.work-info-bracket {
+    display:inline-block;
+    vertical-align:middle;
+}
+.work-info-bracket + .work-info-bracket {
+    margin-left:25px;
+    margin-top:0;
+}
+.work-info-bracket-title {
+    display:inline-block;
+    padding:0 5px;
+    margin-right:5px;
+}
+@media only screen and (max-width:767px) {
+    .work-nav {
+        top:3px;
+    }
+    .work-info-bracket {
+        display:block;
+    }
+    .work-info-bracket + .work-info-bracket {
+        margin-left:0;
+        margin-top:20px;
+    }
+}
+
+.content-block-1 > span, .content-block-2 > span {
+    display:block;
+}
+.full-width {
+    width:100%;
+}
+.half-width {
+    width:50%;
+}
+.third-width {
+    width:calc(100%/3);
+}
+.twothird-width {
+    width:calc(100%/3*2);
+}
+.work-module {
+    padding:20px;
+}
+.work-module h2 {
+  position: relative;
+}
+.work-module h2.title-style:before {
+  content: '';
+  background: url('https://cdn2.hubspot.net/hubfs/364768/title-style.svg') no-repeat center center;
+  position: absolute;
+  width: 287px;
+  height: 268px;
+  top: -30px;
+  left: -107px;
+  z-index: -1;
+}
+.work-module.work-extra-padding {
+    padding:40px;
+}
+.work-parallax-wrap {
+    position:relative;
+    top:100px;
+    left:-184px;
+    z-index:-1;
+}
+.work-module .title4 {
+    margin-bottom:3em;
+}
+.work-module .work-module-image {
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+.work-module .blog-author-meta {
+    padding-top:20px;
+}
+@media only screen and (max-width:767px) {
+    .full-width, .half-width, .third-width, .twothird-width {
+        width:100%;
+    }
+    .work-module .blog-author-meta {
+        padding-top:10px;
+    }
+}
+
+.work-slider-wrap .draggable-slider-container .hs_cos_wrapper_type_widget_container {
+    padding:45px 0;
+}
+.work-slider-wrap .draggable-slider-container .hs_cos_wrapper_type_widget_container:empty {
+    display:none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2J | Media Page
+|--------------------------------------------------------------------------
+*/
+.media-tabs {
+    margin-top:50px;
+}
+.media-tab {
+    display:none;
+}
+#media-events {
+    display:block;
+}
+
+.hs-embed-wrapper {
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
