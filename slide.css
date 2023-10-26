@@ -218,12 +218,14 @@ flex-direction: column;
 max-height: initial;
 align-items: center;
 }
+
 .msg p{
 
 min-width: 100%;
 }
 .msgimg{
   width: 100%;
+  right: -27vw;
   
 }
 }
