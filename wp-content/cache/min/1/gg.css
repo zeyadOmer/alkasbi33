@@ -1,3 +1,10 @@
+.submit-btn{
+  background: #61CE70;
+  font-size: large;
+  border-radius: 5px;
+}
+
+
 .wp-block-archives {
   box-sizing: border-box;
 }
@@ -31976,7 +31983,7 @@ ol.elementor-toc__list-wrapper .elementor-toc__list-item-text-wrapper:before {
   color: var(--e-global-color-text);
 }
 .elementor-widget-content_form_contact fieldset > button {
-  background-color: var(--e-global-color-accent);
+  background-color: #61CE70;
   font-family: var(--e-global-typography-accent-font-family), Sans-serif;
   font-weight: var(--e-global-typography-accent-font-weight);
 }
