@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/alkagjxt/public_html/
+    - export DEPLOYPATH=/home/alkagjxt/public_html
     - /bin/cp -R ./* $DEPLOYPATH
