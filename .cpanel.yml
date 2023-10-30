@@ -1,10 +1,4 @@
----
 deployment:
   tasks:
-    - /bin/cp -R 
     - export DEPLOYPATH=/home/alkagjxt/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp process_form.php $DEPLOYPATH
-    - /bin/cp -R wp-content $DEPLOYPATH
-    - /bin/cp -R wp-includes $DEPLOYPATH
-    - /bin/cp -R wp-json $DEPLOYPATH
+    - /bin/cp -R ./* $DEPLOYPATH
